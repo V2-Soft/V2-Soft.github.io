@@ -5,38 +5,47 @@
 		<title>V2SOFT</title>
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-		<script>
-			window.onload = function(){
-                                if(document.getElementsByClassName){
-				var arr = document.getElementsByClassName("controlled");
-				for(var i = 0; i < arr.length; i++){
-					arr[i].style.display = "none";
-				}
-				
-				var check_text = document.getElementById('category');
-				//addEventListener()方法可以避免在html代码中内嵌 js方法
-				check_text.addEventListener("click", function () {
-					if(check_text.checked) {
-						var arr = document.getElementsByClassName("controlled");
-						for(var i = 0; i < arr.length; i++){
-							arr[i].style.display = "";
-						}
-					} else {
-						var arr = document.getElementsByClassName("controlled");
-						for(var i = 0; i < arr.length; i++){
-							arr[i].style.display = "none";
-						}
-					}
-				});
-                                } else {
-                                    var check_text = document.getElementById('chek');
-                                    check_text.style.display = 'none';
-                                }
-			};
+                <style>
 			
-		</script>
-                
+			footer {
+				background-color: black;
+				padding: 16px 0;
+			}
+
+			.copy {
+				width: 1024px;
+
+				margin: 0 auto;
+				color: gray;
+				font-size: 9px;
+
+			}
+
+			.copy_logo {
+				width: 180px;
+				height: 46px;
+
+			}
+
+			.copycont {
+				display: inline-flex;
+
+			}
+
+			.inlinebox {
+				margin-left: 16px;
+				padding-left: 16px;
+				border-left: 1px solid gray;
+			}
+
+			.copyinfo {
+				text-align: center;
+				margin-top: 8px;
+				border-top: 1px solid gray;
+				padding-top: 8px;
+			}
+
+		</style>
 	</head>
 	<body>
 		<section id="main_nav">
@@ -128,23 +137,6 @@
 		</section>
 		<section id="main_body" name="download">
 			<table>
-				<tr class="td_title">
-					<td colspan="3"><span><strong>免责声明</strong></span></td>
-				</tr>
-				<tr class="td_body">
-					<td colspan="3" class="inner_padding12">
-						V2引擎为网络开源代码修复而来，仅供技术交流使用，请在下载后的24小时内删除！<br/>
-						<!-- V2游戏引擎仅用于《热血传奇》®的衍生游戏《传奇外传》®的PC端游戏开发核心支撑。	<br/> -->
-						任何单位、组织或个人通过V2引擎进行“单机游戏”以外的行为的，应确保已获得《热血传奇》<!-- ® -->相关版权方的许可。<br/>
-						
-						因使用V2游戏引擎引发法律后果的，相关后果及责任由该行为的行为人所自行承担，与程序及程序作者无关。<br/>
-						<p style="color: red; text-align: left;">V2引擎不推荐、不建议也不支持任何未经《热血传奇》<!-- ® -->权利方授权的非个人单机娱乐行为。</p>
-						您使用V2Soft提供的软件成功架设服务端即表示您已悉知并同意不会将V2Soft提供的软件用于侵犯相关权利方的合法权益。<br/>
-						如果您认为软件侵犯了您的合法权益，请联系我们，我们将会在收到通知后尽快移除相关内容以维护您的合法权益。<br/><br/>
-						<label id = "chek"><input type="checkbox" name="category" value="同意" id="category"/>我已知晓、同意并接受上述内容</label>
-					</td>
-				</tr>
-				
 				<tr class="td_title controlled">
 					<td colspan="3"><span><strong>最新版引擎下载</strong></span></td>
 				</tr>
@@ -229,13 +221,27 @@
 			</table>
 		</section>
 		
-		<section id="main_footer">
-			<div id="main_footer_content">
-				<!-- <div class="centercontent_block">【健康游戏忠告】<br/>抵制不良游戏，拒绝盗版游戏。<br/>注意自我保护，谨防受骗上当。<br/>适度游戏益脑，沉迷游戏伤身。<br/>合理安排时间，享受健康生活。</div>
-				<hr/> -->
-				<div class="copyright">&copy; 2022-2023 V2Soft V2M2.Top All Rights Reserved.</div>
-				
+		<footer>
+			<div class="copy">
+				<div class="copycont">
+					<img src="./img/logo2.png" alt="" class="copy_logo" draggable="false">
+					<div class="inlinebox">
+						<div style="margin-bottom: 4px;">
+							健康游戏忠告： 抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。 适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。
+						</div>
+						<div>
+							任何组织或个人因使用V2游戏引擎引发法律后果的，相关后果由其行为人自行承担，与V2游戏引擎及引擎作者无关！
+						</div>
+					</div>
+
+				</div>
+				<div class="copyinfo">
+					<p>如果您认为我们侵犯了您的权益，请发送Email至[vivienneowings84@outlook.com]，我们将在收到邮件的72小时内移除相关内容。</p>
+					<p style="margin-top: 8px;">© 2022-2023 V2Soft. All Rights Reserved.</p>
+				</div>
+
 			</div>
-		</section>
+
+		</footer>
 	</body>
 </html>
