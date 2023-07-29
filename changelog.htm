@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>程序说明</title>
+		<meta name="GENERATOR" content="WinCHM">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style>
+			html,
+			body {
+				/* Default Font */
+				font-family: SimSun, Helvetica, sans-serif;
+				font-size: 9pt;
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+
+		<FONT color=#ffffff>
+			<BR>
+			<FONT size=3>
+				<FONT color=#359b66>
+					<STRONG>[</STRONG><STRONG>2023/07/06</STRONG><STRONG>]更新：[更新文件：M2Server.exe(20230630)、MirClient.exe、GameLogin.exe、MakeLogin.exe、PowerAntiCheat.dll]</STRONG><BR><BR>
+				</FONT>
+			</FONT>
+			<FONT color=#a6caf0>本次更新简介：本次为质量和功能更新。</FONT><BR><BR>
+			<FONT color=#00ff00>
+				【!】M2：修复强化技能达到经验后后续不会自动升级的问题和达到满级经验溢出的问题<BR>【!】M2：增强雷炎蜘蛛的攻击欲望，释放蛛网后有1/3概率石化目标<BR>【!】M2：修复英雄在蛛网状态依然可以跑的问题<BR>【!】客户端：修复解封后的玉璧在刷新背包或者小退前物品描述依然是未解封的问题<BR>【!】客户端：修复内挂物品过滤相关功能工作异常的问题<BR>【!】客户端：优化UI编辑器的启动速度<BR>【!】客户端：修复Logo不能点的问题<BR>【!】客户端：修复部分UI在微端模式下错乱的问题<BR>【+】客户端：支持强化技能自动放玉<BR>【+】客户端：支持1.0客户端UI（只支持基础的热血功能，不支持刀魂、宝石孔等显示，如果需要新功能请使用2.0及以上的UI）。物品罐、血石、千里传音等物品属性暂不支持显示<BR>【+】客户端：支持新外传客户端UI（暂不支持聚能石逻辑）<BR>【+】客户端：自定义UI接入动态图库系统<BR>【+】客户端：增加反加速插件(测试版)<BR>【+】登录器：支持音频引擎切换
+			</FONT>
+
+		</FONT>
+		</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2>
+					<FONT color=#00ff00><BR>【+】工具包：全新的登录器配置器，旧版配置器已弃用<BR>
+						<FONT color=#00ffff>
+							【*】本次需要同步更新NewopUI.data，M2的系统图库中增加48|Data\V2UI.data并重新生成系统库配置文件[CustomSysStaticData.dat]放入客户端资源文件夹内<BR>【*】客户端UI版本需要使用对应的V2UI.data、PlayerInfo.json、UIData.json，否则客户端会乱
+						</FONT><BR>
+					</FONT><BR>
+					<FONT size=3>
+						<FONT color=#359b66>
+							<STRONG>[</STRONG><STRONG>2023/06/24</STRONG><STRONG>]更新：[更新文件：M2Server、客户端、列表配置器]</STRONG><BR><BR>
+						</FONT>
+					</FONT>
+					<FONT color=#a6caf0>本次更新简介：本次为质量更新。</FONT><BR>
+					<FONT color=#00ff00>
+						<BR>【!】M2：修复摆摊购买时48小时绑定不生效的问题<BR>【!】M2：修复道士英雄施毒术释放红绿毒不正确的问题<BR>【!】客户端：修复摆摊购买的关闭按钮图像错误<BR>【+】客户端：支持1.0、2.0、3.0、5.0、新外传登录界面（部分版本的游戏内UI未做匹配）、CADPA（游戏适龄提示）标识显示<BR>【+】列表配置器：支持设置客户端UI版本和是否显示游戏适龄提示<BR>
+					</FONT>
+					<FONT color=#00ff00>
+						<FONT color=#00ffff>【*】登录器配置器生成的单机登录器使用5.0UI，请注意资源配套</FONT>
+					</FONT><BR><BR>
+					<FONT size=3>
+						<FONT color=#359b66>
+							<STRONG>[</STRONG><STRONG>2023/06/16.Fix.1（稳定版）</STRONG><STRONG>]更新：[更新文件：M2Server、客户端]</STRONG>
+						</FONT>
+					</FONT><BR><BR>
+					<FONT color=#a6caf0>本次更新简介：本次为功能及质量更新。</FONT><BR>
+
+				</FONT>
+			</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2>
+					<FONT color=#00ff00>
+						<FONT color=#ff0000>
+							<BR>【Fix.1】【+】M2：支持英雄存储和释放物品罐<BR>【Fix.1】【+】M2：支持StdMode=41，Shape2=1的物品填补火龙之心，每次填补AC字段数据（AC字段为0则每个物品默认填补1点）<BR>【!】M2：修复物品罐能否释放出0个堆叠物品的问题，详情查看<A
+								href="特殊参数详解[地图.称号.装备参数]/游戏装备物品详解/特殊物品/祝福罐.htm">
+								<FONT color=#a6caf0>物品罐</FONT>
+							</A><BR>
+							<FONT color=#00ff00>【+】M2：支持物品罐一次释放Shape2个物品(填0默认释放1个，否则每次释放指定数量)</FONT><BR>
+							<FONT color=#00ff00>【!】客户端：修复药品无法放入物品罐的问题</FONT><BR>
+							<FONT color=#ffffff>【+】客户端：左上角物品系统提示支持极品和普通物品区分显示<BR>【!】客户端：修复部分情况下物品进入背包没有提示的问题</FONT>
+						</FONT>
+					</FONT>
+
+				</FONT>
+			</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2>
+					<FONT color=#00ff00><BR>【+】M2：物品规则中支持物品永久绑定和绑定48小时<BR>
+						<FONT color=#ffff00>【+】M2：增加指令ReclaimItem2 {物品属性} 操作符 值，详情查看<A
+								href="各类脚本功能增强解析[强烈要求阅读]/功能更新(2023外传版)/ReclaimItem2.htm">
+								<FONT color=#a6caf0>ReclaimItem2</FONT>
+							</A>和<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/自定义OK框.htm">
+								<FONT color=#a6caf0>自定义OK框</FONT>
+							</A>
+						</FONT>
+					</FONT><BR><BR>
+					<FONT size=3>
+						<FONT color=#359b66>
+							<STRONG>[</STRONG><STRONG>2023/06/10.Fix.1</STRONG><STRONG>]更新：[更新文件：M2Server、客户端]</STRONG>
+						</FONT>
+					</FONT><BR><BR>
+					<FONT color=#a6caf0>本次更新简介：本次为功能及质量更新，功能扩展、修复Bug。</FONT><BR><BR>
+					<FONT color=#00ff00>
+						<FONT color=#ff0000>【Fix.1】【!】M2：修复爆率等级控制工作不正确的问题<BR>【!】M2：修复$通用变量必须大写的问题</FONT>
+						<BR>【!】M2：修复GiveMine刷出的矿石品质不正确的问题<BR>
+						<FONT color=#ffffff>【!】M2：修复NPC买装备获取时间等信息不正确的问题</FONT><BR>【!】M2：修复0级刀魂无法开启刀魂技能的问题<BR>
+						<FONT color=#00ff00>
+							【+】M2：ReclaimItem操作宝石孔加点类型时支持-1属性，此时根据装备的攻魔道刺自动识别加点位置（只有其中一种属性识别为对应属性，否则识别为全加，包括不含攻魔道刺的装备）<BR>
+						</FONT>
+						<FONT color=#00ff00>
+							【+】M2：Give、GiveOK、GiveMine、GiveKimNeedle支持QF回调，在物品放入背包之前会触发@OnGiving(英雄@H.OnGiving)，对应的物品对象为$GIVINGITEM<BR>【+】M2：【※注意，对可叠加物品无效※】右下角商铺购买时支持QF回调，在物品放入背包之前会触发@OnShopping，对应的物品对象为$GIVINGITEM
+						</FONT>
+						<BR>【+】M2：新增$MONDROPPINGITEM、$PICKKINGUPITEM、$GIVINGITEM三种物品变量，用法同$BOXITEM<BR>【+】M2：ReclaimItem新增79：绑定方式【0-不绑定，1-永久绑定，2-限时绑定】，80：绑定时长<BR>
+						<FONT color=#00ff00>【+】M2：@HaoM6注解支持兼容MUL指令</FONT>
+					</FONT>
+
+				</FONT>
+			</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2>
+					<FONT color=#00ff00><BR>
+						<FONT color=#ffffff>【!】客户端：修复英雄装备窗口显示层级不正确的问题<BR>【+】客户端：本次为2.0UI和5.0UI双版本更新</FONT>
+					</FONT><BR><BR>
+					<FONT size=3>
+						<FONT color=#359b66>
+							<STRONG>[</STRONG><STRONG>2023/05/29.Fix.6</STRONG><STRONG>]更新：[更新文件：M2Server、客户端]</STRONG>
+						</FONT><BR><BR> <SPAN class=STYLE14>
+							<FONT color=#ff00ff> <STRONG>请大家注意：此版的装备成长已默认关闭脚本触发改为由配置文件分配属性，如果需要使用脚本请手动开启</STRONG>
+								<STRONG>。</STRONG>
+							</FONT>
+						</SPAN><BR><BR>
+					</FONT>
+					<FONT size=2>
+						<FONT color=#a6caf0>本次更新简介：本次为功能及质量更新，功能扩展、修复Bug。</FONT>
+					</FONT><BR>
+
+				</FONT>
+			</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2><BR>
+					<FONT color=#00ff00>
+						<FONT color=#ffffff>【+】M2：支持在M2同级目录放入图标文件后，可以在M2启动时替换图标，图标命名为v2soft.ico</FONT>
+						<BR>【!】M2：修复精炼和重铸全部放入无关物品也能继续执行的问题<BR>【+】M2：@HaoM6注解支持@InputString和@InputInteger，使用该注解后输入的工作方式将变为HaoM6版，数字的保存位置也将从M变量变为N变量<BR>【!】M2：修复#CALL跳转无法带参数的问题<BR>【+】M2：装备成长支持由M2自动分配属性（默认），使用配置文件Envir\WearLevelUpgrade.txt，写法与装备洗炼一致，也可以在装备成长配置中切换回旧版的脚本触发模式<BR>【+】M2：MOV、EQUAL、LARGE、SMALL使用英文单引号可以保存以ANDSPM等开头的字符串，此种状态下参数不会被识别为变量<BR>
+					</FONT>
+					<FONT color=#a6caf0>&nbsp;
+						示例：<BR>&nbsp; #IF<BR>&nbsp; True<BR>&nbsp; #ACT<BR>&nbsp; MOV S0
+						'D0'<BR><BR>&nbsp; #IF<BR>&nbsp; EQUAL S0 D0<BR>&nbsp; #ACT<BR>&nbsp; SENDMSG 5
+						测试未通过<BR>&nbsp; #ELSEACT<BR>&nbsp;&nbsp;SENDMSG 6 测试通过<BR><BR>&nbsp;
+						#IF<BR>&nbsp; EQUAL S0 'D0'<BR>&nbsp; #ACT<BR>&nbsp; SENDMSG&nbsp;6
+						测试通过<BR>&nbsp; #ELSEACT<BR>&nbsp;&nbsp;SENDMSG&nbsp;5 测试未通过</FONT>
+					<FONT color=#ff0000>
+						<BR>
+					</FONT>
+					<FONT face=宋体>
+						<FONT color=#ffffff>
+							<FONT size=2>
+								<FONT size=2>
+									【+】客户端：支持输入框使用Enter键提交<BR>【!】客户端：修复骰子动画异常的问题<BR>【+】客户端：调整关闭刺客职业后创建角色时不显示刺客选项</FONT>
+							</FONT>
+						</FONT>
+					</FONT><BR><BR>
+					<FONT size=3><STRONG>
+							<FONT color=#359b66>[2023/05/29 +
+								Fix.4]更新：[更新文件：20230529.全套引擎、20230529.M2.Fix.4]<BR></FONT>
+						</STRONG><BR><SPAN class=STYLE14>
+							<FONT color=#ff00ff>
+								<STRONG>请大家注意：此版的ReclaimItem、GiveMine</STRONG><STRONG>指令格式已经进行了修改，如果使用了这个指令请参照本次更新的文档进行修改。</STRONG>
+							</FONT>
+						</SPAN><BR><BR></FONT>
+					<FONT size=2>
+						<FONT color=#a6caf0>本次更新简介：本次为功能及质量更新，对英雄进行优化、支持装备洗炼、功能扩展、修复Bug。</FONT><BR>
+					</FONT>
+				</FONT>
+			</FONT>
+		</FONT>
+		<FONT face=宋体>
+			<FONT color=#ffffff>
+				<FONT size=2>
+					<FONT size=2>
+						<FONT color=#ff00ff><BR></FONT>【20230529.Fix.4】【+】M2：兼容HaoM6指令CheckTextList<BR>
+						<FONT color=#00ff00>【20230529.Fix.4】【!】M2：修复宝石融合配置读取不正确的问题</FONT>
+						<BR>【20230529.Fix.4】【!】M2：优化EQUAL、LARGE、SMALL逻辑<BR>【20230529.Fix.4】【!】转生装备配置器：修复WinXP无法使用的问题<BR>
+						<FONT color=#ff0000>【20230529.Fix.4】【!】版本转换器：修复转换HaoM6数据库靴子、腰带数据不正确的问题</FONT>
+						<BR>【20230529.Fix.3】【!】M2：修复物品变量($BOXITEM等)无法正确获取数组的问题<BR>
+						<FONT color=#00ff00>
+							【20230529.Fix.3】【+】M2：增加脚本参数：$SCRIPTPARAM(X)，其中X为0-9，一共10个，参数中如果需要使用变量，则需要使用方括号[]代替尖括号把变量包裹起来<BR>
+						</FONT>
+						<FONT color=#a6caf0>&nbsp;
+							示例：<BR>&nbsp; [@main]<BR>&nbsp; #IF<BR>&nbsp; True<BR>&nbsp; #ACT<BR>&nbsp; MOV P0
+							2023<BR>&nbsp; #SAY<BR>&nbsp; &lt;脚本参数测试/@脚本参数(111,文本,[$STR(P0)],4,5,6)&gt;<BR><BR>&nbsp;
+							[@脚本参数]<BR>&nbsp; #IF<BR>&nbsp; True<BR>&nbsp; #ACT<BR>&nbsp; SENDMSG 5
+							&lt;$SCRIPTPARAM(0)&gt;，&lt;$SCRIPTPARAM(1)&gt;，&lt;$SCRIPTPARAM(2)&gt;，&lt;$SCRIPTPARAM(3)&gt;，&lt;$SCRIPTPARAM(4)&gt;，&lt;$SCRIPTPARAM(5)&gt;<BR>
+							<FONT color=#00ff00>【20230529.Fix.2】【!】M2：</FONT>
+							<FONT color=#00ff00>重构EQUAL、SMALL、LARGE三个指令的底层代码，大幅度提升这三个指令的稳定性<BR></FONT>
+						</FONT>
+						<FONT color=#00ff00>【20230529.Fix.1】【!】M2：修复32位版M2无法正常执行ReclaimItem的问题</FONT>
+						<FONT color=#ff0000> </FONT><BR>【!】DBS、M2、LoginSrv：修复找不到SQLite数据库时生成空数据库的问题，现在直接报错提示找不到<BR>
+						<FONT color=#ffff00>【+】M2：增加MAX指令</FONT><BR>
+					</FONT>
+					<FONT color=#a6caf0>&nbsp; 示例：<BR></FONT>
+				</FONT>
+			</FONT>
+
+			<FONT size=2>
+				<FONT color=#a6caf0>&nbsp; #ACT<BR>&nbsp; MAX P0
+					5<BR>&nbsp;
+					P0与5比大小，大的存回P0</FONT> <BR>
+				<FONT color=#ffff00>【+】M2：增加MIN指令</FONT><BR>
+			</FONT>
+			<FONT size=2>
+				<FONT color=#a6caf0>&nbsp; 示例：<BR>&nbsp; #ACT<BR>&nbsp; MIN P0
+					5<BR>&nbsp;
+					P0与5比大小，小的存回P0</FONT> <BR>
+			</FONT>
+
+			<FONT size=2>
+				<FONT color=#00ff00>【!】M2：修复怪物爆的灵气无法存入玉璧内的问题，优化灵气吸收代码的效率<BR>
+					<FONT color=#ffffff>【!】M2：宝石配置、精炼配置、洗炼配置、装备成长从【选项-功能配置】中转移到【查看-物品功能】中</FONT>
+					<BR>【!】M2：修复不勾选显示装备获得经验选项装备无法自动打孔的问题
+				</FONT><BR>
+				<FONT color=#ffffff>【!】M2：修复玉璧灵气扣除不正确的问题</FONT><BR>
+				<FONT color=#00ff00>【!】M2：修复道士英雄卡技能的问题</FONT><BR>
+			</FONT>
+			<FONT color=#ff0000>
+				<FONT size=2>
+					<FONT color=#ffffff>【!】M2：修复主体攻击位于英雄攻击范围外的个体时英雄发呆的问题</FONT><BR>
+				</FONT>
+				<FONT size=2>
+					<FONT color=#00ff00>【!】M2：修复有些时候精炼出的属性不正确的问题<BR></FONT>
+					【!】M2：修复EQUAL对S变量判断有错误的问题<BR>【!】M2：修复EQUAL、SMALL、LARGE对常量比较结果异常的问题<BR>
+					【!】M2：RECLAIMITEM指令格式调整：RECLAIMITEM 装备位置 属性编号 操作符【+ - =
+					】数值<BR>
+					<FONT color=#00ff00>【!】M2：修复宝石灯充能无法正常进行的问题</FONT><BR>
+				</FONT>
+				<FONT size=2>
+					<FONT color=#00ff00>
+						【!】M2：重构变量系统，修复MOV无法正确操作字符串的问题<BR>【!】M2：修复GetDlgItemValue不能正确存储变量的问题<BR>【!】M2：扩展I变量为0-4999，M变量为0-699
+					</FONT><BR>
+				</FONT>
+				<FONT color=#00ff00>
+					<FONT size=2>
+						<FONT color=#ff0000>【+】M2：耐久、最大耐久属性扩展到21E</FONT><BR>
+						【+】M2：列表信息三界面已完成（天工开物选项）<BR>
+						【+】M2：宝石合成、宝石融合已支持扣费
+						<BR>【+】M2：MonGen.SDB支持怪物绑定I变量，当怪物刷出后绑定的I变量将被置为1，怪物被杀死后归零，只有在I为零时才会刷出对应的怪物（不是很建议使用，这个功能M2可以有，但你可以不用）<BR>【+】M2：增加NPC指令MONGENBOSS
+						地图编号 X Y 怪物名 范围 绑定I变量的序号【0-4999】
+						是否对I变量进行自增，启用将在每次刷新时把对应的I变量自动加1(0/1) ，详情查看<A
+							href="各类脚本功能增强解析[强烈要求阅读]/功能更新(2023外传版)/绑定变量的怪物说明.htm">
+							<FONT color=#a6caf0>绑定变量的怪物说明</FONT>
+						</A>
+						<BR>　　<FONT color=#a6caf0>注意：绑定过变量的怪物会在死亡时把对应的I变量的值减1</FONT>
+						<BR>
+					</FONT>
+					<FONT color=#00ff00>
+						<FONT color=#ff0000 size=2>【+】M2：支持装备洗炼功能（老版本），详情查看</FONT><A
+							href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+							<FONT color=#a6caf0 size=2>天工开物</FONT>
+						</A>
+						<FONT size=2>
+							<FONT color=#ff0000>，支持属性锁定版本的洗炼会在之后推出</FONT><BR>　　
+						</FONT>
+						<FONT color=#a6caf0 size=2>
+							神奇宝石：StdMode=41、Reserved=88、AniCount绑定Attributes文件夹中的配置，洗出品质会触发@ReclaimGetQualityX段，否则触发@ReclaimProcX段<BR>　　说明：当配置文件中的属性数量少于宝石孔数量时不会对装备进行任何修改（包括品质属性），仅用于触发脚本，因此可以利用空列表配合脚本触发自己做洗炼（如刀魂洗炼）
+						</FONT>
+					</FONT>
+				</FONT><BR>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#ffff00>
+							【+】M2：增加QF触发段：@ReclaimGetQualityX，对应AniCount的神奇宝石洗出品质后将执行该段代码，如果没洗出品质则触发@ReclaimProcX段<BR>【+】M2：增加QF触发段：@ReclaimPerfectSucceed和@ReclaimPerfectFailed，分别在精炼成功和失败时触发<BR>【+】M2：增加$RECLAIMITEM对象（用于精炼和洗炼脚本中，其余位置无效果），用法同$BOXITEM
+						</FONT><BR>
+						<FONT color=#ffff00>【!】M2：ReclaimItem系列指令支持-5位置，表装备洗炼时被洗炼的装备</FONT>
+						<BR>【!】M2：修复查看英雄信息时显示主体钻石的问题<BR>
+					</FONT>
+					<FONT color=#ffff00 size=2>【+】M2：<FONT color=#00ff00>
+							<FONT color=#ffff00>追加刺客</FONT>
+						</FONT>灵魂陷阱和潜行的刀魂<BR></FONT>
+				</FONT>
+				<FONT size=2>
+					<FONT color=#ffff00>
+						<FONT color=#00ff00>【!】M2：</FONT>
+						<FONT color=#00ff00>修复刺客火焰护身不扣刀魂点的问题</FONT>
+					</FONT><BR>
+				</FONT>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>【!】M2：修改GIVEMINE指令。格式：GIVEMINE 名字&nbsp;数量
+							质量/纯度/等级，适用于玄天神石（40类）、矿石(43类)、宝石(45类)、淬炼卷轴(54类)，其余物品无效</FONT>
+						<BR>
+					</FONT>
+					<FONT size=2>
+						<FONT color=#a6caf0> &nbsp;&nbsp;&nbsp;
+							40类：0-65
+							<BR>　　43类：0-65<BR>　　45类：0-255<BR>
+							　　48类：0-21E&nbsp;
+						</FONT>
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT size=2>
+				<FONT color=#a6caf0>&nbsp;<BR>&nbsp;&nbsp;&nbsp;
+					第三个参数不填则在可用范围内随机取(宝石和淬炼卷轴不可以)，该指令用法目前已基本与HaoM6引擎一致</FONT>
+				<BR>
+			</FONT>
+			<FONT size=2>
+				<FONT color=#00ff00>【+】M2：增加装备功能配置界面【查看-物品功能】<BR>【+】M2：增加新功能的配置重载菜单选项<BR>
+					<FONT color=#ffff00>【+】M2：支持宝石突变时突变为1级选项</FONT>
+					<BR>
+					【+】M2：支持婚戒铭刻功能，婚戒不掉落，不可摘下，使用RECLAIMITEM指令，属性编号7<BR>
+					【+】M2：调整夫妻传送为外传版（传送到配偶身边而不是把配偶传送过来，在功能配置中可以调回旧模式）
+				</FONT>
+				<BR>
+			</FONT>
+			<FONT size=2>
+				<FONT color=#ffffff>
+					【!】客户端：调整攻魔道刺石头在属性面板的显示方式<BR>【!】客户端：修复显示全名效果异常的问题<BR>【!】客户端：修复自定义图标模糊的问题<BR>【!】客户端：修复与NPC对话时弹出MessageBox背包会抖动的问题<BR>【+】客户端：支持双击婚戒触发@夫妻传送
+				</FONT>
+				<BR>
+			</FONT>
+			<FONT size=2>
+				<FONT color=#00ffff>
+					【*】此版本M2的版本号参数将更新为120230527，此前的所有旧客户端无法登陆此版本M2<BR>【*】此版本的RECLAIMITEM指令格式已经改变，如果有使用到的地方请参照新格式进行修改<BR>
+				</FONT>&nbsp;
+			</FONT>
+			<BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/05/20]更新：[更新文件：全套引擎]</FONT>
+			</STRONG><BR><BR>
+			<FONT color=#a6caf0> 本次更新简介：本次为功能更新，支持宝石的合成、融合、宝石灯充能、装备打孔、装备精炼、重铸。<BR><BR></FONT>
+			<FONT color=#00ff00>
+				<FONT color=#ffffff>【+】全套引擎：增加启动后自动最小化</FONT><BR>【+】M2：支持攻魔道刺宝石，详情查看<A
+					href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>【+】M2：增加双属性宝石，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>【+】M2：支持盲盒宝石，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>【+】M2：增加宝石合成，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>【+】M2：支持宝石灯充能，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>【+】M2：支持宝石融合，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+					<FONT color=#a6caf0>天工开物</FONT>
+				</A><BR>
+				<FONT color=#ff0000>
+					<FONT color=#00ff00>【+】M2：支持装备打孔，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+							<FONT color=#a6caf0>天工开物</FONT>
+						</A><BR>【+】M2：支持装备精炼，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+							<FONT color=#a6caf0>天工开物</FONT>
+						</A><BR>【+】M2：支持装备重铸，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/天工开物.htm">
+							<FONT color=#a6caf0>天工开物</FONT>
+						</A></FONT><BR>
+					<FONT color=#ffffff>【+】M2：自定义特效的包裹特效支持品质生效和宝石孔数量判断</FONT><BR>
+					<FONT color=#00ff00>【!】M2：修复已解封的乾坤玉璧在使用过后外观异常的问题</FONT>
+					<BR>【!】M2：修复宝石计算属性不正确的问题<BR>【!】M2：淬炼卷轴变更为54类，如果数据库中有相关数据请注意进行修改
+				</FONT><BR>
+				<FONT color=#ffffff>【!】M2：修复防御石、魔防石无效的问题<BR>【+】M2：添加关闭镶嵌宝石突变选项</FONT>
+				<BR>【!】M2：修复宝石突变几率配置无法正常保存读取的问题<BR>
+				<FONT color=#00ff00>【+】客户端：支持淬炼结晶、宝石补充武器刀魂值</FONT>
+				<BR>【!】客户端：修复宝石合成等窗口交换物品不正确的问题<BR>【!】登录器：修复单机测试登录器无法正常使用的问题<BR>【+】登录器配置器：恢复生成单机登录器选项<BR>
+				<FONT color=#00ffff>
+					【*】此版本的宝石数量计算发生变化，最多为7个，请清空已开孔的物品数据以免出现问题<BR>【*】此版本的自定义特效数据库StdEffect.SDB格式发生变化，请在M2重新保存一次以便升级到最新格式，并重新生成一份CustomEffect.dat放入客户端中让客户端正确显示特效！<BR>【*】此版本的物品品质属性计算发生变化，最大为3点<BR>【*】此版本M2的版本号参数将更新为120230520，此前的所有旧客户端无法登陆此版本M2
+				</FONT>
+			</FONT><BR>
+			<BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/05/08]更新：[更新文件：全套引擎]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0>本次更新简介：本次为质量和功能更新，更新套装激活、武器鉴定及其对应的还原功能<BR><BR></FONT>
+			<FONT color=#ff0000>
+				<FONT color=#00ff00>【+】M2：RECLAIMITEM全系列指令支持新物品框：位置参数写为[-4,OK框种类(0/1),OK框ID(0-15)]即可支持新OK框
+				</FONT><BR>
+				<FONT color=#00ff00>
+					【+】M2：RECLAIMITEMDLG指令新增套装激活和武器鉴定及其对应的还原，参数一为13/14/15/16，参数二为套装的数据库类型（也就是AppraisalItem.SDB的AppraisalType字段）<BR>【!】M2：修复3K宝箱在64位系统无法正常运作的问题<BR>【!】RunGate：修复部分消息号处理代码因升级64位后带来的问题<BR>
+					<FONT color=#ff0000>【!】M2：修复64位引擎无法取出仓库物品</FONT><BR>
+				</FONT>
+			</FONT>
+			<FONT color=#ffffff>【!】客户端：优化套装衣服性别显示、套装等级显示<BR>【!】客户端：修复连接64位M2时无法正常播放升级、转生等特效的问题<BR>
+				<FONT color=#00ffff>
+					【*】从此版本开始，World.DB更名为V2M2.DB，使用SQLite数据库的用户请注意将数据库文件进行更名<BR>【*】遇到问题可以尝试先将全套引擎都换为32位版本再尝试一次，如果相关功能在32位版本工作正常，则可将Bug上报并暂时使用32位版<BR>【*】此版本M2的版本号参数将更新为120230508，此前的所有旧客户端无法登陆此版本M2
+				</FONT>
+			</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/05/04]更新：[更新文件：M2Server、客户端]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0>本次更新简介：本次主要为质量更新</FONT><BR>
+			<FONT color=#00ff00><BR>
+				<FONT color=#ff0000>【+】M2：$BOXITEM支持旧物品框<BR></FONT>【+】M2：新爆率支持ALL参数，满足概率后爆出该组所有物品，详情见<A
+					href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/新爆率.htm">
+					<FONT color=#a6caf0>爆率扩展</FONT>
+				</A>页<BR>
+				<FONT color=#ffffff>【+】M2：增加极品肉设置，选项-&gt;物品装备-&gt;肉-&gt;允许出现极品肉</FONT><BR>
+				<FONT color=#ffffff>【!】M2：修复被魔法打死的动物挖出来的肉品质不为0的问题</FONT><BR>
+				<FONT color=#ffffff>【!】M2：修复创建秘族英雄时英雄图标异常的问题</FONT><BR>
+				<FONT color=#ff0000>【!】M2：修复新爆率#CHILD参数加载不正确的问题</FONT><BR>
+				<FONT color=#ff0000>【!】M2：修复LARGE和SMALL的第一个参数对非变量值无效的问题</FONT><BR>
+				<FONT color=#ff0000>【!】客户端：修复因资源文件错误导致的客户端效果异常</FONT><BR>
+				<FONT color=#ffffff>【!】客户端：修复关闭免蜡功能后人物亮度值有时会变为为0的问题</FONT><BR>
+				<FONT color=#ffffff>【!】客户端：修复51MirX版任务窗口只有关闭重开后才刷新任务名的问题</FONT>
+			</FONT><BR>
+			<FONT color=#00ffff>【*】此版本M2的版本号参数将更新为120230504，此前的所有旧客户端无法登陆此版本M2</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/30]更新：[更新文件：M2Server、客户端]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0>本次更新简介：本次主要为质量更新</FONT><BR>
+			<FONT color=#00ff00><BR>【+】M2：增加双击清除日志<BR>
+				<FONT color=#ff0000>【!】M2：更新StdEffect.SDB格式，修复因字段重名导致的数据读取异常问题</FONT>
+				<BR>【!】客户端：修复定时特效纵向坐标异常的问题<BR>【!】客户端：修复自定义外观特效在某些动作时特效异常的问题<BR>
+				<FONT color=#ff0000>【+】更新标准自定义特效库，现在提供了一套预设的自定义特效库（更新至神羊装备），详情见引擎包</FONT>
+			</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/26]更新：[更新文件：M2Server、客户端]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0>本次更新简介：本次主要为质量更新</FONT><BR><BR>
+			<FONT color=#00ff00>
+				<FONT color=#ff0000>【!】M2：修复除刺客外无法触发暴击的问题</FONT><BR>【!】M2：修复劈星斩道士特效异常的问题<BR>
+			</FONT><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/25]更新：[更新文件：M2Server、客户端]</FONT>
+			</STRONG><BR><BR>
+			<FONT color=#a6caf0>本次更新简介：本次主要为功能更新，增强自定义特效的功能</FONT><BR><BR>
+			<FONT color=#00ff00>
+				【+】M2：自定义特效功能增强，外观特效现在支持与人物动作分离单独分方向播放（例如雷霆战甲的翅膀）<BR>【+】M2：自定义内观特效新增两种绘制模式<BR>【+】M2：新增合体技能：超级冰咆哮<BR>【!】M2：修复MapEvent.txt出现非数字字符导致的非有效整数错误<BR>【!】客户端：同步M2的自定义特效更新，优化装备特效呈现出来的效果<BR>【!】客户端：取消主体信息界面的九龙轴按钮显示，九龙轴全部做完后会重新开放
+			</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/21]更新：[更新文件：M2Server、客户端、版本转换工具]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0>本次更新简介：本次主要为质量更新，修复刺客在没有火焰护身技能时其它技能也无法自动释放，增加版本转换工具<BR><BR>
+				<FONT color=#00ff00>
+					【+】M2：月灵AI优化，增加月灵重击配置【选项-&gt;功能设置-&gt;技能魔法-&gt;道士技能-&gt;召唤月灵】<BR>【!】M2：修复英雄施毒术释放速度异常的问题<BR>【!】M2：修复查看其他人装备时显示的是自己的装备的问题<BR>【!】客户端：修复刺客内挂细节问题<BR>【+】工具包：新增版本转换器
+				</FONT>
+			</FONT>
+			<BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/09]更新：[更新文件：M2Server]</FONT>
+			</STRONG><BR><BR>
+			<FONT color=#a6caf0>本次更新简介：本次主要为质量更新，修复对HaoM6魔王岭的兼容问题<BR></FONT>
+			<FONT color=#00ff00>
+				<FONT color=#ff0000><BR>
+					<FONT color=#00ff00>【+】M2：增加NPC标签(@HaoM6
+						)，添加后将启用HaoM6（3K）模式的MOBPLACE和RECALLMOBEX<BR>【+】M2：魔王岭怪物死亡时支持触发[@KillMissionMob]<BR>
+						【!】M2：修复HaoM6指令兼容性问题：MobPlace 怪物名
+						【第2/3个参数无效】<BR> </FONT>
+				</FONT>
+			</FONT>
+			<BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/08]更新：[更新文件：RunGate]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#a6caf0 size=2>本次更新简介：本次主要为质量更新，修复RunGate的严重问题</FONT><BR>
+			<FONT color=#00ff00>
+				<FONT color=#ff0000><BR>【!】RunGate：修复刺客技能在开启技能时间释放间隔检查后无法使用的问题</FONT>
+			</FONT><BR><BR>
+			<FONT color=#359b66 size=3><STRONG>[2023/04/06]更新：[更新文件：M2Server、客户端、登录器配置器]<BR><BR></STRONG>
+				<FONT color=#a6caf0 size=2>本次更新简介：本次主要为质量更新，完善等级系统和刺客伤害计算</FONT><BR><BR>
+			</FONT>
+			<FONT color=#00ff00>
+				<FONT color=#ff0000>【!】M2：修复刺客合击不计算主体伤害的问题</FONT>
+				<BR>【!】M2：修复连升8级配置读取错误的问题<BR>【!】M2：调整连升8级适配打怪获取经验升级时也触发<BR>【!】M2：出错时显示堆栈信息位置调整：选项-&gt;性能设置-&gt;实验功能-&gt;出错时显示堆栈信息<BR>
+				<FONT color=#ff0000>【+】M2：调整刺客职业伤害计算规则并增加相关配置【选项-&gt;功能设置-&gt;技能魔法-&gt;刺客技能-&gt;基础伤害】</FONT>
+				<BR>
+				<FONT color=#ff0000>【!】M2：修复500级后无法正常升级的问题<BR>【!】M2：修复JS引擎调用SendDefMessage报错的问题<BR>
+					<FONT color=#ffffff>【!】M2：修复转生等级为0时所需经验不为0的问题<BR>【!】客户端：修复刺客自动释放技能时的一处细节</FONT>
+				</FONT>
+			</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/03]更新：[更新文件：M2Server、客户端、登录器配置器]<BR><BR></FONT>
+			</STRONG>
+			<FONT color=#00ff00>【+】M2、客户端：支持刺客刀魂，详情见<A href="特殊参数详解[地图.称号.装备参数]/刀魂属性表.htm">
+					<FONT color=#a6caf0>刀魂属性表</FONT>
+				</A><BR>【!】客户端：修复客户端会在非挂机期间自动释放武器技能的问题</FONT><BR><BR><STRONG>
+				<FONT color=#359b66 size=3>[2023/04/02]更新：[更新文件：M2Server、客户端、登录器配置器]</FONT>
+			</STRONG><BR><BR>
+			<FONT color=#00ff00>【+】M2、客户端：自动挂机支持刺客职业</FONT>
+
+			<FONT size=2><BR><BR><STRONG>
+					<FONT color=#359b66 size=3>
+						[2023/04/01]更新：[更新文件：M2Server、mPlugOfScript、mScriptLoader、MakeScript(密码版、商业版)、ScriptTool(普通版、密码版、商业版)]<BR>
+					</FONT>
+				</STRONG>
+				<FONT face=宋体>
+					<FONT color=#ffffff>
+						<FONT size=2><BR>
+							<FONT color=#a6caf0>本次更新简介：本次主要为质量更新，正式启用两种加密插件，启用自定义脚本解密接口，现在可以自行开发脚本加密插件<BR>
+							</FONT>
+
+						</FONT>
+					</FONT>
+				</FONT>
+				<BR>【!】M2：将自带的验证码系统由纯数字修改为字母数字混合<BR>【+】M2：支持IGE/3K/HaoM6的加密脚本解析<BR>【+】M2：增加IGE模式的商业脚本插件，原有的普通版和密码版也会正常维护<BR>
+				<FONT color=#00ff00>【+】M2：增加检测地图描述指令CHECKMAPDESC
+					地图描述，用于检测指定地图描述的地图</FONT>
+				<BR>　　示例：<BR>　　#IF<BR>　　CHECKMAPDESC
+				比奇省<BR>　　#ACT<BR>　　BREAK<BR>
+				<FONT color=#00ff00>【+】M2：QF增加自动拾取触发@AutoPickUp<BR>【+】M2：增加操作当次自动拾取的指令ALLOWPICK
+					True/False<BR></FONT>【!】M2：修复集中刷新怪物功能异常的问题<BR>【!】M2：修复昼夜系统时间不正确的问题<BR>
+				<FONT color=#ff0000>【+】M2：增加自定义脚本解密接口</FONT>
+				<BR>　　脚本要求：第一行为加密标识，内容为双引号中的内容“CUSTOMENCYPTSCRIPTFLAG”<BR>　　　　　　　第二行为脚本的解密密码<BR>
+				　　解密函数格式：procedure(Src:
+				PAnsiChar;
+				Dest: PAnsiChar; SrcLength: Integer; PassWord: PAnsiChar);
+				stdcall;<BR>
+
+				　　解密函数的第一个参数为脚本当前行的文本指针，第二个参数为解析后脚本存放的指针（由M2提供，是一个长度为2048字节的AnsiChar数组），第三个参数为传进来的当前行脚本的长度，第四个参数为密码<BR>
+				　　插件内SetProc：SetProc(@插件内的解密函数,
+				pWideChar('CustomPlugOfScript'),
+				length('CustomPlugOfScript'));<BR>
+
+				　　插件内正确执行SetProc后，M2检测到自定义加密标识后便会调用自定义解密插件对脚本进行解密。<BR>
+				<FONT color=#00ffff>
+					【*】MakeScript：密码版不绑定机器码，商业版绑定机器码，商业版插件换机器后无法使用<BR>【*】ScriptTool：密码版和商业版不可以混用，两个版本加密出来的脚本无法互相解析
+				</FONT>
+
+				<BR><BR>
+
+				<FONT color=#ffffff>
+					<FONT size=2><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>
+								[2023/03/23]更新：[更新文件：M2Server、mPlugOfScript、mScriptLoader、MakeScript(普通版、密码版、商业版)、ScriptTool(普通版、密码版、商业版)]<BR>
+							</FONT>
+						</STRONG>
+						<FONT face=宋体>
+							<FONT color=#ffffff>
+								<FONT size=2><BR>
+									<FONT color=#a6caf0>
+										本次更新简介：本次主要为质量更新，正式启用两种加密插件，启用自定义脚本解密接口，现在可以自行开发脚本加密插件<BR>
+									</FONT>
+
+								</FONT>
+							</FONT>
+						</FONT>
+						<BR>【!】M2：将自带的验证码系统由纯数字修改为字母数字混合<BR>【+】M2：支持IGE/3K/HaoM6的加密脚本解析<BR>【+】M2：增加IGE模式的商业脚本插件，原有的普通版和密码版也会正常维护<BR>
+						<FONT color=#ff0000>【+】M2：增加自定义脚本解密接口</FONT>
+						<BR>　　脚本要求：第一行为加密标识，内容为双引号中的内容“CUSTOMENCYPTSCRIPTFLAG”<BR>　　　　　　　第二行为脚本的解密密码<BR>
+						　　解密函数格式：function(Src: PAnsiChar; Dest:
+						PAnsiChar; SrcLength: Integer; PassWord: PAnsiChar): integer;
+						stdcall;<BR>
+
+						　　解密函数的第一个参数为脚本当前行的文本指针，第二个参数为解析后脚本存放的指针（由M2提供，是一个长度为2048字节的AnsiChar数组），第三个参数为传进来的当前行脚本的长度，第四个参数为密码，返回值不用管<BR>
+						　　插件内SetProc：SetProc(@插件内的解密函数,
+						pWideChar('CustomPlugOfScript'),
+						length('CustomPlugOfScript'));<BR>
+
+						　　插件内正确执行SetProc后，M2检测到自定义加密标识后便会调用自定义解密插件对脚本进行解密。<BR>
+						<FONT color=#00ffff>
+							【*】MakeScript：密码版不绑定机器码，商业版绑定机器码，商业版插件换机器后无法使用<BR>【*】ScriptTool：密码版和商业版不可以混用，两个版本加密出来的脚本无法互相解析
+						</FONT>
+
+						<BR><BR>
+						<FONT color=#359b66 size=3>
+							<STRONG>[2023/03/18]更新：[更新文件：GameCenter、M2Server、登录器配置器、数据清理工具]<BR></STRONG>
+							<FONT face=宋体>
+								<FONT color=#ffffff>
+									<FONT size=2><BR>
+										<FONT color=#a6caf0>本次更新简介：本次主要为质量更新，修复插件系统对WinXP的支持，同时修复几个Bug
+										</FONT><BR><BR>
+										<FONT color=#ffffff>
+											<FONT color=#ff00ff>【!】M2：修复插件系统对WinXP的支持</FONT>
+											<BR>
+											【!】客户端：修复客户端节日宝箱开箱动画不正确的问题<BR>【*】IP版客户端：补充标注上个版本新增的特性：支持保存上次填的配置<BR>【*】M2：补充标注上个版本增加的指令：OpenDragonBox
+											箱子ID<BR>【+】M2：增加指令：ISOPENBOX
+											用来判断角色是否处于开宝箱的状态<BR>【+】M2：增加指令：OPENBOXS 箱子ID
+											用来兼容54MAX开箱子指令<BR>
+											<FONT color=#00ff00>
+												【+】M2：支持拾取物品触发[@PickUpItem]，ReclaimItem系列指令支持-3位置，表示当前正在拾取的物品<BR>
+												<FONT color=#ff0000>【+】M2：修复麻痹戒指无法对怪物生效的问题</FONT>
+												<BR>【!】M2：修复GETWEARNAME无法取-2位置<BR>
+												<FONT color=#ff0000>【!】M2：修复生成客户端资源细节</FONT><BR>
+												<FONT color=#ff0000>【!】客户端：修复读取客户端资源的细节</FONT>
+											</FONT><BR>
+										</FONT>
+										<FONT color=#ffffff>
+											【!】控制器：修复保存配置无法修改插件根路径的问题<BR>【!】数据清理工具：修复因代码回滚导致的病毒清理功能缺失
+										</FONT>
+
+									</FONT>
+								</FONT>
+							</FONT>
+							<BR><BR><STRONG>[2023/03/12]更新：[更新文件：DBServer、M2Server、LoginGate、数据清理工具、数据通]</STRONG>
+						</FONT><BR>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2><BR>
+						<FONT color=#a6caf0>
+							本次更新简介：对XP的兼容性恢复到之前的插件无法使用，其余功能正常、对移动端平台的win虚拟机上的可用性不做任何保证、支持3K/HaoM6的宝箱、工具包更新及修复
+						</FONT>
+						<BR><BR>
+						<FONT color=#00ff00>
+							【!】M2：修复64位更新后合体后无法立即显示合体状态特效的问题<BR>
+							【+】M2：支持3K/HaoM6模式宝箱<BR>
+							【!】M2：修复NIMBUSWORD的TYPE参数与文档不符的问题<BR>
+							<FONT color=#ff0000>【!】M2：修复允许极品列表的逻辑错误</FONT>
+							<BR>
+							<FONT color=#ffffff>【+】DBS：支持刺客职业开关</FONT>
+							<BR>
+							<FONT color=#ffffff>【+】LoginGate：支持自动调整数据包限制大小到匹配大小</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<BR>
+							<FONT color=#ffffff>【+】工具包：新增数据通（测试版）</FONT>
+							<BR>
+							<FONT color=#ff0000>【!】数据清理工具：修复MySQL版清理数据时报错的问题<BR></FONT>
+						</FONT>
+						<FONT color=#ff0000>【!】数据清理工具：修复全局变量99以后无法清空的问题</FONT><BR><BR>
+						<FONT color=#359b66 size=3><STRONG>[2023/03/06]更新：[更新文件：全套更新]<BR><BR></STRONG>
+							<FONT color=#00ff00 size=2>
+								<FONT color=#a6caf0>
+									本次更新简介：全套升级为真64位、新增天气系统、支持TriggerText地图参数、支持ChangeSkill，修复客户端无限崩溃<BR>
+									<FONT color=#ff0000>
+										<STRONG>注意：本次由于数据结构进行了大幅度变动，所有服务端软件、客户端都需要进行配套，否则无法进入游戏！</STRONG>
+									</FONT>
+								</FONT><BR>
+								<FONT color=#ff00ff>【!】修复64位引擎因内部结构缺陷导致在64位Win11无限报错的问题<BR></FONT>
+								【+】M2：MapInfo增加三个天气参数：DIRT（沙尘暴）、SNOW（下雪）、FLOWER（飘花）<BR>【!】M2：修复部分数据指令操作时存在的逻辑错误<BR>【+】M2：新增S$和N$变量<BR>【+】M2：地图配置支持定时触发脚本，TRIGGERTEXT(时间秒/@触发)<BR>【+】M2：支持CHANGESKILL
+								旧技能编号 新技能编号
+								种类[0/1区分普通技能和天赋]<BR>
+								【+】M2：增加英雄在攻击时自动释放武器技能，优化法师技能出招逻辑<BR>【!】客户端：修复因缺少资源导致的客户端无限报错弹窗
+							</FONT>
+							<BR><BR><STRONG>[2023/02/26]更新：[更新文件：DBServer、RunGate、M2Server、客户端]<BR><BR></STRONG>
+							<FONT color=#00ff00 size=2>
+								<FONT color=#a6caf0>本次更新简介：刺客的基础技能全部完成，新增爆出物自动入包，重写部分内存优化以修复大刀、下属攻击不掉血的问题
+								</FONT>
+								<BR>【+】DBS：扩展属性数据，使用旧DBS火焰护身时长将无法保存<BR>【+】M2：刺客增加炎龙波、火镰狂舞、旋风腿、火焰护身、灵魂陷阱、潜行<BR>【+】M2：支持怪物爆物品自动入包机制（配合AllowAutoPickUpItemList.txt使用），选项-&gt;功能设置-&gt;基础功能-&gt;怪物爆物品设置<BR>
+								<FONT color=#ff0000>【!】M2：修复数据库Need为83和84时穿戴等级限制无效的问题</FONT>
+								<BR>【!】客户端：基本修复法师自动开盾卡合击的问题<BR>
+								<FONT color=#00ffff>【*】内存优化后可能仍然存在一些未发现的问题，如果遇到，可以选择反馈以帮助引擎更快的修复相关问题
+								</FONT>
+							</FONT>
+						</FONT><BR><BR>
+						<FONT color=#359b66 size=3>
+							<STRONG>[2023/02/21]更新：[更新文件：GameCenter、M2Server、客户端、ResPacker、ServerListSrv、SDBEditor、DataCleanTool]
+								<BR><BR></STRONG>
+							<FONT color=#a6caf0 size=2>
+								本次更新简介：本次主要针对54Max的部分功能进行支持、支持刺客的部分技能、NPC支持A变量、客户端Bug修复</FONT>
+							<BR><BR>
+						</FONT>
+						<FONT color=#00ff00>
+							<FONT color=#ff00ff>
+								【+】M2、客户端：新增刺客技能鬼灵步、刺战合击-雷霆突袭、刺法合击-烈焰之刺、刺道合击-幽冥一击【目前炎龙波、旋风腿、火镰狂舞、灵魂陷阱、火焰护身尚未完成】。
+							</FONT>
+							<BR>
+							<FONT color=#ffffff>【!】M2：修复动态图库的几个按钮点击后无效果的问题</FONT>
+							<BR>【!】M2：修复人形怪生成时可能会导致M2报错<BR>【!】M2：物品数据库变更：乾坤玉璧(SedMode=2
+							Shape=12)的AC字段表示每次玉璧的吸收单位(填100就是每次吸100)，AC * DuraMax为玉璧的储量<BR>
+							<FONT color=#ffffff>【!】M2：优化M2启动时卡顿的状况</FONT><BR>
+							<FONT color=#ffffff>
+								【!】M2：优化顶戴数据，现在顶戴使用静态配置文件，使用方法同自定义特效，以减轻服务端流量<BR>【!】M2：优化动态图库数据，现在使用客户端静态配置文件，使用方法同自定义特效，以减轻服务器流量<BR>
+							</FONT>
+							<FONT color=#ffffff>【!】M2：优化自定义特效UI的易用性</FONT><BR>
+							<FONT color=#ffffff>【+】M2：增加系统图库自定义<BR>【+】M2：系统公告文本LineNotice.txt已支持下列格式</FONT>
+							<BR>
+							<FONT color=#a6caf0>&nbsp;&nbsp;&nbsp;
+								;[前景色,背景色]表示滚动公告<BR>&nbsp;&nbsp;&nbsp;
+								;&lt;前景色,背景色&gt;表示聊天框内彩色公告,<BR>&nbsp;&nbsp;&nbsp; ;{前景色,背景色}表示屏幕居中公告，该公告支持 \
+								换行
+								<BR>&nbsp;&nbsp;&nbsp; ;(前景色,背景色)表示聊天框顶部公告.
+							</FONT> <BR>
+							<FONT color=#ff0000>
+								【+】M2：NPC名字支持A变量<BR>【!】M2：修复英雄登录触发不正确的问题<BR>【!】M2、客户端：基本修复远程职业卡合击的问题<BR>【!】M2：大幅优化M2内存<BR>【+】M2：支持爆率文件内使用#CALL（或#INCLUDE）包含其它爆率文件，以Envir为根路径，路径使用[]包裹，开头不需要斜线<BR>　　
+								<FONT color=#a6caf0>示例：#CALL
+									[MonItems\全局爆率测试.txt]<BR>　　　　　#INCLUDE
+									[MonItems\全局爆率测试.txt]<BR> 　　　　　上面这两个作用完全一样，喜欢哪个用哪个</FONT><BR>
+								<FONT color=#00ff00>
+									<FONT color=#ffffff>【!】M2：等级溢价系统修改为默认关闭<BR>【!】M2：鉴宝系统改为默认关闭</FONT>
+									<BR>【!】M2：修复物品罐拒绝存物品后客户端无法取下装备的问题<BR>
+								</FONT>
+								<FONT color=#ff0000>【+】M2：修改顶戴花翎指令，SETICON 封号位置[0-9] 顶戴ID 属性ID</FONT>
+							</FONT><BR>【+】客户端：支持系统图库修改<BR>
+							<FONT color=#ffffff>【+】客户端：居中系统提示支持使用"\"进行换行</FONT><BR>【+】客户端：顶戴支持显示文本称号<BR>
+							<FONT color=#ff0000>
+								【+】客户端：重构NPC对话显示、动态窗口显示和51MirX模式的任务窗显示，现在兼容3K颜色标签、54Max花括号表达式、Blue颜色标签、188文本控件（Blue模式的任务窗不支持上述特性）<BR>
+								<FONT color=#ffffff>
+									【!】客户端：修复千里传音文本颜色异常的问题<BR>【!】客户端：修复角色移动时聊天栏向下滚动的问题<BR>【!】客户端：修复传音筒置顶文本绘制异常的问题<BR>【!】客户端：调整获取服务器列表的方式，经少量公网测试暂未发现问题<BR>【!】客户端：修复刀魂部分状况下显示INF%的问题<BR>
+									<FONT color=#00ff00>【-】控制器：删除数据清理工具</FONT><BR>
+									<FONT color=#ffffff>【-】列表服务器：取消下载文件的身份认证</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00><BR>
+							<FONT color=#ffffff>【+】工具包：增加资源封装工具ResPacker<BR>
+								<FONT color=#00ff00>【+】工具包：新增数据清理工具DataCleanTool支持SQLlite3和MySQL双模式</FONT>
+								<BR>【+】SDBEditor：增加添加物品快捷窗口
+							</FONT>
+						</FONT><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2023/02/05]更新：[更新文件：DBServer、M2Server、登录器配置器]</FONT>
+						</STRONG><BR><BR>
+						<FONT color=#00ff00>
+							【!】M2、DBS：存人物数据时时内存优化<BR>【!】M2：修复人性怪导致M2报错的问题<BR>【!】M2：修复显示错误堆栈无效<BR>【!】M2：修复新版本下载地址显示不正确<BR>【+】客户端：血条改为NewopUI.data内设置图像
+						</FONT><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2023/02/03]更新：[更新文件：DBServer、M2Server、客户端]</FONT>
+						</STRONG>
+						<BR><BR>
+						<FONT color=#a6caf0>本次更新简介：支持3K更改聊天颜色指令、修复经脉UI、加强物品罐功能</FONT> <BR><BR>
+						<FONT color=#00ff00>
+							<FONT color=#ffff00>
+								【+】M2：新增RESETGOTO指令，用于重置跳转计数，对于大量重复运行的脚本，或者某一脚本连续执行时如果提示脚本死循环，则可尝试使用本指令加以解决，不保证完全有效<BR>
+							</FONT>
+							<FONT color=#ff00ff>
+								<FONT color=#ffff00>【+】M2：新增SETGETITEMFROMCAN 值[0/1]
+									指令用于控制物品罐在取物品时是否允许此操作<BR>【+】M2：新增SETSAVEITEMTOCAN 值[0/1]
+									指令用于控制物品罐在存物品时是否允许此操作</FONT>
+							</FONT>
+						</FONT> <BR>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#ff00ff>
+								<FONT color=#ffff00>
+									<FONT color=#ffffff>【+】M2：新增CHANGHEARMSGCOLOR 时长[秒] 类型[1-玄绿 2-玄紫
+										3-玄褐]，使用后对应角色的发言将变色<BR> 【+】M2：新增CHECKHEARMSGCOLOR
+										检查角色是否处于聊天变色期间<BR>
+										【!】M2：修复查看等级窗口触发M2保存人物数据超时</FONT>
+									<BR>
+									<FONT color=#00ff00>【!】M2：修复物品罐历史遗留的一些问题</FONT>
+									<BR>
+									<FONT color=#00ff00>
+										<FONT color=#ffffff>【!】客户端：调整不再对2类物品进行持久检查</FONT>
+										<FONT color=#ffffff><BR>
+											<FONT color=#ffffff></FONT>【!】客户端：修复经脉无法正确修炼的问题
+										</FONT><BR>
+									</FONT>
+								</FONT>
+								<FONT color=#ffffff>
+									【+】客户端：经脉文本描述、各经络坐标点数据外置为VaInfos.Json<BR>【!】客户端：修复并重制经脉UI<BR>【-】客户端：取消对客户端最小化时的性能优化<BR>
+									<FONT color=#00ffff>【*】客户端：当M2使用 SETSAVTITEMTOCAN 0
+										取消本次存操作之后会导致客户端无法取下装备，玩家小退重新上线后恢复，原因暂时未知<BR>
+										【@】客户端：大对话框制作UI会导致部分UI来回跳动，建议使用动态窗口制作UI，大对话框在制作NPC对话以外的地方非必要不使用
+										<BR>
+										【*】M2：不要滥用ResetGoto指令，暂不确定该指令是否会造成不良影响，建议非必要不使用<BR>【*】M2：物品罐StdMode为2，Source为UnbindItemList内的Id，AniCount为1表示释放出物品后不扣除物品罐耐久<BR>【*】JS引擎重新换为js32.dll和js64.dll
+									</FONT>
+								</FONT>
+							</FONT>
+						</FONT><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2023/01/28]更新：[更新文件：全套引擎、登录器配置器、微端构建器]</FONT>
+						</STRONG>
+						<BR><BR>
+						<FONT color=#a6caf0>
+							本次更新简介：修复可创建同名英雄、支持外观内观自定义、登录器与列表服务器协同问题优化、优化M2流量、顶戴功能支持属性、支持物品来源记录</FONT>
+						<BR><BR>
+						<FONT color=#00ff00>
+							<FONT color=#ff0000>【!】M2：物品数据库变更，斗笠的AniCount为外观，Source的高4位为内观是否显示头发(目前仅有0-不显示
+								1-显示)，低4位为显示方式(0/1-先画斗笠再画头盔 2-先画头盔再画斗笠)<BR>【!】DBS：修复因英文大小写导致的可创建同名英雄</FONT>
+							<BR>
+							<FONT color=#ff00ff>
+								【!】客户端：调整衣服、武器、发型、地面、背包图像为JSON完全控制（包括连击），客户端不再进行预置<BR>【-】M2：取消套装列表、套装技能描述、特效列表由M2的热发送，现全部转为M2生成静态文件，可自行集成到登录器或使用TCP服务器或微端进行更新<BR>【!】M2：调整自定义特效图像序号突破6w5，现在可以更多<BR>【!】M2：自定义特效已支持连击<BR>【!】M2：取消宝石外观、宝石属性的热发送，改为由M2生成客户端静态文件<BR>
+								<FONT color=#00ff00>【-】M2：取消客户端配置的热更新<BR></FONT>
+								<FONT color=#00ff00>
+									【+】M2：选项-&gt;功能设置，调整向客户端发送顶戴数据为可开关，可根据流量情况自行设置为开启或关闭（该有的效果还是会有，只是客户端不显示了）
+								</FONT><BR>
+								<FONT color=#00ff00>【+】M2：选项-&gt;客户端设置-&gt;客户端文件，所有客户端静态文件在此处生成</FONT><BR>
+								<FONT color=#ffffff>【!】M2：优化物品数据结构<BR>【!】M2：修复灵印后无法穿戴装备的问题</FONT>
+							</FONT>
+							<BR>【+】M2：顶戴支持附加属性，详情查看顶戴属性设置<BR>【+】DBS、M2、客户端：支持物品来源记录。<BR>【!】M2：修复Goto数量检测与ScriptGotoCountLimit数量不统一的问题<BR>【!】M2：修复物品掉落触发@MonDroppingItem会触发脚本死循环的问题<BR>
+							<FONT color=#ffffff>
+								【+】M2：性能参数-&gt;实验性功能，增加ScriptGotoCountLimit调整<BR>【!】客户端：物品信息细节调整<BR>【!】客户端：修复0方向刺客武器绘制顺序<BR>【!】客户端：调整内外观特效绘制方式，现在特效颜色更加鲜艳<BR>【!】客户端：修复点击解除合体按钮后HMP特效依然存在的问题<BR>
+								<FONT color=#00ff00>
+									【!】客户端：大幅度优化自定义角色属性绘制效率，旧有方式仍然兼容，但不推荐，建议使用新的PlayerInfo.Json进行自定义属性界面编写
+								</FONT><BR>
+								<FONT color=#00ff00>【!】登录器：修复从补丁服务器拉取文件时存在的问题<BR>
+									<FONT color=#ffffff>【!】登录器：优化新补丁检查的触发时机及触发方式<FONT color=#ff0000>
+											<BR>【!】微端构建器：修复构建图像资源文件报错、修复启动时报错
+										</FONT>
+									</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2><STRONG>
+							<FONT color=#359b66 size=3>[2023/01/08]更新：[更新文件：M2Server]</FONT>
+						</STRONG> <BR><BR>
+						<FONT color=#00ff00>【!】M2：修复Goto数量检测与ScriptGotoCountLimit数量不统一的问题<BR>
+							<FONT color=#ffffff>【+】M2：性能参数-&gt;实验性功能，增加ScriptGotoCountLimit调整</FONT>
+						</FONT><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2022/12/30]更新：[更新文件：DBServer、M2Server、客户端、SDBEditor]
+							</FONT>
+						</STRONG>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2><BR><BR>
+						<FONT color=#00ff00>
+							<FONT color=#ff0000>
+								<FONT color=#ff00ff>
+									【+】DBS、M2、客户端：引入刺客职业并支持其配套的特效、图库等，技能暂未完成。<BR>【!】M2：ReclaimItem的属性编号【8】用处发生变动（由保留变更为装备内观发光标志）。<BR>【+】M2、DBS、客户端：引入刺客职业,尚处于开发阶段
+								</FONT><BR>【!】M2：修复重新加载JS引擎后炸内存的问题
+							</FONT><BR>
+							<FONT color=#ff0000>【!】M2：修复英雄施毒术不自动换毒的问题</FONT><BR>
+							<FONT color=#ff0000>
+								【!】M2：进一步修复合体逻辑漏洞<BR>【+】M2：支持龙星伤害（切割）<BR>【!】M2：修复仓库物品达到一定数量之后客户端无法获取的问题<BR>【!】M2：修复合体技能等级为0的问题<BR>【!】M2：修复英雄修炼技能按钮显示异常<BR>【!】M2：修复查看其他人时部分属性为0<BR>
+								<FONT color=#ffff00>【+】M2：增加SETMARKER 位置[0-2] 图像库ID 图像ID <BR> 　　
+									图像库ID设置为-1即可清除对应位置的MARKER，该指令设置的图标将伴随人物数据存入数据库，并在角色选择界面进行显示，在图标不需要变动的情况下只需要设置一次。<BR>
+									<FONT color=#ff00ff>
+										【+】M2：基本完成对HaoM6指令：CHECKKIMNEEDLE、TAKEKIMNEEDLE、TURNMARKER指令的兼容<BR>【+】M2：支持动态图像库，具体使用方式见动态图像库与系统保留图像库。<BR>
+										【!】M2：武器鉴定与套装系统拆分，现在武器既可以进行鉴定提供超级技能，又可以激活套装计入套装数量</FONT>
+								</FONT>
+							</FONT><BR>【+】M2：增加顶戴花翎指令，SETICON 封号位置[0-9]
+							文件号 图片序号 X Y 数量 叠加绘制[0/1]
+							帧速(毫秒)<BR>【+】M2：扩展自定义特效支持刺客、支持外观特效绘制方式修改、支持内观有刀魂直接显示特效
+						</FONT><STRONG>
+							<FONT color=#359b66 size=3><BR></FONT>
+						</STRONG>
+						<FONT color=#00ff00>【+】M2：新增动态UI相关内容，详情查看<A href="各类脚本功能增强解析[强烈要求阅读]/更新功能(2022)/动态UI.htm">
+								<FONT color=#a6caf0>动态UI</FONT>
+							</A><BR>【+】M2：DlgPlayEffect新增第10个参数UseForCustomDlg[0/1]，当值为1时，参数Type将代表动态窗口的ID<BR>【!】M2：修复下属攻击大刀的问题<BR>【!】M2：修复挖地类怪物二次刷新在客户端无条件显示<BR>【!】M2：修复时装外显时特效错乱的问题<BR>
+							<FONT color=#ffffff>【+】M2：支持GoHome指令<BR>
+								<FONT color=#00ff00>【+】客户端：支持顶戴花翎<BR>【!】客户端：修复切换地图后在新地图在与旧地图的相同位置存在假下属的问题
+								</FONT>
+							</FONT><BR>
+							<FONT color=#ffffff>【!】客户端：修改排行榜界面、购买物品界面为外传版</FONT><BR>
+							<FONT color=#ffffff>【+】客户端：支持排行榜右键查看角色信息<BR></FONT>
+							<FONT color=#ffffff>
+								【!】客户端：修复查看其他角色信息时头发显示异常的问题<BR>【!】客户端：修复一处自定义特效的Bug<BR>【!】客户端：修复挖肉动作<BR>【!】客户端：优化飘血逻辑<BR>
+								<FONT color=#ff0000>
+									<FONT color=#ffffff>【!】客户端：修正一处错字</FONT>
+								</FONT><BR>
+								<FONT color=#ff00ff>【-】DBS：取消转生图标控制，统一使用SETMARKER控制</FONT><BR>
+							</FONT>
+						</FONT>
+						<FONT color=#ff0000>
+							<FONT color=#00ff00>【!】M2、DBS：修复时装外显不存储的问题</FONT>
+							<BR>【!】SDBEditor：修复空格也会被当做分隔符的问题
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00><BR></FONT><BR>
+						<FONT color=#359b66 size=3><STRONG>[2022/11/24]更新：[更新文件：客户端]<BR><BR></STRONG></FONT>
+						<FONT color=#ff0000>【!】进一步封堵SQL注入。<BR>【!】客户端：优化最小化时的性能占用。</FONT><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2022/11/23]更新：[更新文件：全套引擎]</FONT>
+						</STRONG><BR><BR>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#ff0000>【!】修复一处致命漏洞。<BR></FONT> 【+】M2：新增勇士点相关指令：GameValour 操作符
+							数量&nbsp;CheckGameValour 操作符
+							数量<BR>
+						</FONT>
+						<FONT color=#00ff00>【+】M2：新增传奇币相关指令：LegendCoin 操作符 数量 CheckLegendCoin 操作符
+							数量<BR>
+							【!】DBS、M2、客户端：调整转生等级上限支持21E（需进一步测试）。</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2><BR><BR><STRONG>
+							<FONT color=#359b66 size=3>[2022/11/22]更新：[更新文件：M2Server]</FONT>
+						</STRONG><BR><BR>
+						<FONT color=#00ff00>
+							【+】M2：新增极品物品列表AllowPerfectItemList.txt，只有位于该列表内的物品才会爆出极品【选项-物品装备-极品几率-几率控制-启用极品列表】。<BR>【+】M2：SendCenterMsg增加7模式，发送屏幕中间淡入淡出大字消息。<BR>
+						</FONT>
+						<FONT color=#ff0000>
+							<FONT color=#00ff00>
+								【!】M2：宝石等级改为初生自带一级，涉及到宝石等级调整的脚本需要降一级使用，例如原本调整宝石为2级等级填2，现在则填1。<BR>【!】M2：修复英雄摘下武器刀魂不关闭的问题。
+							</FONT><BR>【!】M2：修复计算属性时外传属性不重新计算的问题
+						</FONT>
+						<FONT color=#ff0000>。<BR>【!】M2：修复合体技能及合体条件的检测。<BR>【+】客户端：角色属性面板支持自定义显示。</FONT>
+						<BR><BR>
+						<STRONG>
+							<FONT color=#359b66 size=3>
+								[2022/11/01]更新：[更新文件：全套引擎、ServerListSrv、ServerListGate、客户端、工具包]
+							</FONT>
+						</STRONG><BR>
+
+						<FONT color=#ff00ff>
+							【+】全面支持SQLite3数据库。<BR>【+】新增列表服务器及网关，不仅可以发送列表，还可以发送必备补丁。<BR>
+							<FONT color=#ff00ff>
+								【!】优化M2读取和保存人物时与DBS的通信数据量。<BR>【!】调整客户端验证码保存机制。
+							</FONT>
+						</font>
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#00ff00>
+								<FONT face=宋体>
+									<FONT color=#ffffff>
+										<FONT size=2>
+											<FONT color=#00ff00>
+												<FONT color=#00ff00>
+													<FONT color=#ff0000>
+														<FONT color=#00ff00>
+															<FONT color=#ff0000>
+																<FONT color=#ffffff>
+																	<FONT color=#00ff00><BR>
+																		<FONT color=#ff0000>
+																			【+】M2：增加位运算相关指令，详情查看。<BR>【+】M2：新增自定义OK框，OpenItemBoxEx
+																			OK框ID[0-15] 是否收取物品(0/1)
+																			文本提示，详情请见<A href="./help/index.htm">
+																				<FONT color=#a6caf0>自定义OK框
+																				</FONT>
+																			</A>
+																			。</FONT>
+																		<BR>【!】M2：修复英雄获得转生将升级时获得经验会导致报错的问题<BR>
+																		<FONT color=#ffff00>
+																			【+】M2：新增指令RegMapQuest 地图编号
+																			标志号[直接写数字，不含中括号] 标志值[0/1] 怪物名
+																			物品名[具体名/*] 触发名[具体名/*]
+																			是否为组队触发(不写默认取0)[0/1]<BR>
+																		</FONT> 　　<FONT color=#a6caf0>
+																			示例：RegMapQuest 0
+																			300 0
+																			鸡 * Q001</FONT>
+																		&nbsp;<BR>
+																		<FONT color=#ffff00>
+																			【+】M2：新增指令RegMapEvent 地图号
+																			座标X
+																			座标Y 触发标识
+																			触发条件 触发机率 事件类型</FONT>
+																		<BR>　　<FONT color=#a6caf0>
+																			示例：REGMAPEVENT 0 336
+																			260
+																			-1:1 1:回城卷:0 0
+																			1:@MapEventDropItem</FONT>
+																		<BR>【+】M2：极品掉落支持腰带、靴子和生肖。<BR>【!】M2：修复M变量切换地图不清空的问题。<BR>【+】M2：增加熔岩洞穴怪物及其它怪物AI，详情见
+																	</FONT><A href="./help/index.htm">
+																		<FONT color=#a6caf0>新怪物</FONT>
+																	</A>
+																	<FONT color=#00ff00>。</FONT>
+																	<BR>【!】M2：优化怪物爆物品，修复爆物品时潜在的内存泄漏一处。<BR>
+																</FONT>
+																<FONT color=#ffffff>
+																	【+】M2：增加SendCenterMsg指令，详情参见</FONT>
+																<A href="./help/index.htm">
+																	<FONT color=#a6caf0>HaoM6兼容说明</FONT>
+																</A><BR>【!】M2、客户端：修复元宝交易问题。<BR>
+																<FONT color=#00ff00>【+】M2：兼容部分HaoM6脚本指令。
+																</FONT>
+																<BR>【+】M2：兼容HaoM6任务脚本，新旧任务模式可在M2内切换。<BR>
+																<FONT color=#00ff00>
+																	【!】M2：头发、斗笠外观数据更新：均支持Hair2.data~Hair4.Data
+																</FONT>
+																<BR>
+																<FONT color=#a6caf0>
+																	　　0-16：Hair2<BR>　　17-34：Hair3<BR>　　35-43：Hair4
+																</FONT>
+																<BR>
+																<FONT color=#00ff00>
+																	【!】M2：斗笠数据库变更：当Shape=1时不显示（朱雀印、香囊等），当Shape=0时正常显示，当Shape&gt;1或&lt;0时，Shape为斗笠图像的纵向偏移（适用于面巾的纵向调整），当Source=0或1时先绘制斗笠再绘制头盔（适合面巾类斗笠），当Source=2时先绘制头盔再绘制斗笠（适合神羊类斗笠）。
+																</FONT><BR>
+																<FONT color=#ffffff>
+																	【+】M2：物品数据库变更，增加Shape2字段，为刺客的到来做准备。
+																</FONT>
+															</FONT>
+															<BR>【+】M2：新增银两、勇士点、传奇币，修复并扩展灵符、金刚石最大为21E<BR>【+】M2：StdItems、Magic、Monster数据库支持StringDataBase，即SDB
+														</FONT>
+														<FONT color=#c0dcc0> </FONT>
+													</FONT>
+												</FONT>
+											</FONT>
+
+										</FONT>
+									</FONT>
+								</FONT>
+								<BR>【+】M2：增加 AddTextList 值 路径 <BR>【+】M2：增加
+								DelTextList 值 路径
+							</FONT>
+						</FONT>
+						<FONT color=#359b66 size=3><BR></FONT>
+						<FONT color=#ff0000>
+							【+】M2：重构变量系统，对变量数量进行扩展，修复部分指令写入变量时存在错误，修复SUM指令错误，对部分指令支持的变量种类进行了扩展、新增N变量。<BR>
+							<FONT color=#00ff00>
+								<FONT color=#a6caf0>
+									　　P：0-499<BR>　　G：0-999<BR>　　D：0-499<BR>　　M：0-499<BR>　　I：0-499<BR>　　A：0-499<BR>　　S：0-999<BR>　　H：0-499<BR>　　N：0-999<BR>　　U：0-99<BR>　　J：0-99<BR>　　T：0-99<BR>　　Z：0-99<BR>　　人物标志：1-7999
+								</FONT>
+							</FONT>
+						</FONT>
+						<FONT color=#00ff00>
+							<BR>
+							<FONT color=#ff0000>
+								【+】M2：NPC对话支持变量无限嵌套。<BR>【+】M2：脚本参数支持变量直接嵌套。（如果发现不能嵌套的情况，请反馈）。<BR>
+								<FONT color=#00ff00>　　</FONT>
+								<FONT color=#c0dcc0>嵌套示例：<BR>　　[@叠加测试]<BR>　　#IF<BR>　　#ACT<BR>　　MOV
+									P0 1<BR>　　MOV S1 变量嵌套#32测试<BR>　　SENDMSG 5
+									&lt;$STR(S&lt;$STR(P0)&gt;)&gt;</FONT>
+							</FONT>
+							<FONT color=#00ff00>
+								<FONT color=#ff0000><BR>
+									<FONT color=#00ff00>
+										<FONT color=#ff0000>【+】M2：完成合体系统。</FONT>
+										<BR>【+】M2：套装技能至多同时支持6个，支持直接给技能和合体后给技能。
+									</FONT>
+									<FONT color=#00ff00><BR>【+】M2：扩展人形怪支持穿到首饰盒、生肖盒、时装。</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#00ff00>
+								<FONT color=#ff0000>
+									<FONT color=#00ff00><BR>
+										<FONT color=#ff0000>【+】M2、客户端：支持物品光柱特效。</FONT>
+									</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#00ff00>
+								<FONT color=#ff0000>
+									<FONT color=#00ff00>
+										<FONT color=#ffffff><BR>
+											<FONT color=#ff0000>【+】M2：完成全部刀魂属性。<BR></FONT>
+											<FONT color=#c0dcc0>刀魂属性说明(最大点数为255)：<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;攻击暴击类按
+												每1点提升攻击/暴击伤害：0.4%<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;群体治愈术：每1点提升HP回复量：0.4%<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;召唤术（支持技能：召唤神兽、召唤骷髅、召唤月灵、诱惑之光）：每1点提升召唤下属经验：5点<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;施毒术：实际威力 = 每1点提升伤害0.4%<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;幽灵盾、神圣战甲术、魔法盾：每1点增加2秒时间<BR>
+												&nbsp;&nbsp;&nbsp;&nbsp;暴击吸收：每1点提升暴击伤害：0.2%<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<BR> &nbsp;&nbsp;&nbsp;&nbsp;如果实际加成效果与文档不符，以实际为准。<BR>
+												<BR>
+												　　刀魂属性编号参考<A href="./help/index.htm">刀魂属性表</A> 。<BR>
+												<FONT color=#ff0000>【+】M2：完成外传扩展属性。<BR>【+】M2：装备新增神盾精通属性。
+												</FONT> <BR>
+												<FONT color=#00ff00>【+】M2：增加指令：ARRANGEPROPCOUNT
+													装备位置[与ReclaimItem一致]
+													属性数量
+													忽略品质[0/1]，本指令将从后向前清除多余的属性(按ReclaimItem内的顺序)。
+													<BR>　　示例：<BR>　　ARRANGEPROPCOUNT&nbsp;-1
+													2<BR>　　;如果属性数量比2个多，那么强制从后面往前清除，直到剩2个
+												</FONT> <BR>
+												<FONT color=#ff0000>
+													【+】M2：新增内存优化和Extern.Js配置。选项-性能参数-实验性功能，可根据实际情况开启或关闭。<BR>
+												</FONT>
+												<FONT color=#00ff00>
+													　　不要将优化时间设置的过短，否则可能会导致负优化。<BR>【+】M2：控制菜单内添加立即优化内存选项。用于手动强制优化内存。<BR>
+												</FONT>
+												<FONT color=#a6caf0>
+													　　说明：内存优化的本质是将不必要的内存转移到虚拟内存中，这样的操作不宜过多使用，而且对性能可能会产生影响。同时由于将一部分内存被转移到虚拟内存中，将不可避免的带来原本不必要的硬盘读写。<BR>　　因此推荐开启“在M2启动完成时优化一次内存“，或在刷怪数趋于稳定之后手动优化一次内存。除非必要，不然不建议开启运行时优化。
+												</FONT>
+												<FONT color=#00ff00>
+													<BR>【+】M2：增加H.StdModeFuncXX用于英雄触发功能物品，支持英雄触发的物品需要将Source设置为1（限31类），否则无法双击。<BR>【+】M2：新增QMission-0.txt，位于Market_Def，用于任务第二栏触发脚本使用（第一栏暂不支持）。<BR>【+】M2：新增脚本指令AutoGotoXY
+													X Y [地图名]
+													如果不写地图名则表示任意地图<BR>
+													<FONT color=#ff0000>
+														【+】M2：新增UJTZ四种变量，均为0-99，U、J为数字型变量、T、Z为字符串变量（长度255字节），J、Z变量每天0点清空（如果0点角色未在线则在上线时清空）<BR>
+														<FONT color=#00ff00>
+															【+】M2：支持宝石灯（充能界面暂未制作，可通过ReclaimItem进行充能测试），分类55，HP、MP和HMP最大均可充能至16777215，即1600w<BR>　　
+														</FONT>
+														<FONT color=#a6caf0>宝石灯优先消耗对应属性，对应属性为0则会消耗HMP。
+														</FONT>
+														<FONT color=#00ff00>
+															<BR>
+														</FONT>
+														<FONT color=#ffff00>
+															【+】M2：新增变量$GROUPMASTER，取组队队长名称，未组队返回空文本<BR>【+】M2：新增变量$GROUPMASTERMIRRORMAP，取组队队长所在的镜像地图编号，不是镜像地图或未组队返回空文本<BR>【+】M2：新增变量$GROUPMASTERMAP，取当前组队队长所在地图编号，未组队返回空文本<BR>
+														</FONT>
+														<FONT color=#ff0000>【+】M2：增加记录日志脚本：AddGameLog 日志操作号
+															物品名<BR>　　
+															<FONT color=#c0dcc0>
+																增加的日志需要在LogServer内查看</FONT>
+														</FONT> <BR>
+														<FONT color=#00ff00>&nbsp;&nbsp;&nbsp; </FONT>
+														<FONT color=#a6caf0>
+															日志操作号（不仅限于下列编号，但未给出的编号不会自动转换为对应文本，仅会显示其编号）：<BR>&nbsp;&nbsp;&nbsp;
+															0:
+															取回物品<BR>&nbsp;&nbsp;&nbsp; 1:
+															存放物品<BR>&nbsp;&nbsp;&nbsp; 2:
+															炼制药品<BR>&nbsp;&nbsp;&nbsp; 3:
+															持久消失<BR>&nbsp;&nbsp;&nbsp; 4:
+															捡起物品<BR>&nbsp;&nbsp;&nbsp; 5:
+															制造物品<BR>&nbsp;&nbsp;&nbsp; 6:
+															毁掉物品<BR>&nbsp;&nbsp;&nbsp; 7:
+															扔掉物品<BR>&nbsp;&nbsp;&nbsp; 8:
+															交易物品<BR>&nbsp;&nbsp;&nbsp; 9:
+															购买物品<BR>&nbsp;&nbsp;&nbsp; 10:
+															出售物品<BR>&nbsp;&nbsp;&nbsp; 11:
+															使用物品<BR>&nbsp;&nbsp;&nbsp;
+															12:
+															人物升级<BR>&nbsp;&nbsp;&nbsp; 13:
+															减少金币<BR>&nbsp;&nbsp;&nbsp;
+															14:
+															增加金币<BR>&nbsp;&nbsp;&nbsp; 15:
+															死亡掉落<BR>&nbsp;&nbsp;&nbsp;
+															16:
+															掉落物品<BR>&nbsp;&nbsp;&nbsp; 17:
+															等级调整<BR>&nbsp;&nbsp;&nbsp; 18:
+															无效代码<BR>&nbsp;&nbsp;&nbsp; 19:
+															人物死亡<BR>&nbsp;&nbsp;&nbsp; 20:
+															升级成功<BR>&nbsp;&nbsp;&nbsp; 21:
+															升级失败<BR>&nbsp;&nbsp;&nbsp; 22:
+															城堡取钱<BR>&nbsp;&nbsp;&nbsp; 23:
+															城堡存钱<BR>&nbsp;&nbsp;&nbsp; 24:
+															升级取回<BR>&nbsp;&nbsp;&nbsp; 25:
+															武器升级<BR>&nbsp;&nbsp;&nbsp; 26:
+															背包减少<BR>&nbsp;&nbsp;&nbsp;
+															27:
+															改变城主<BR>&nbsp;&nbsp;&nbsp; 29:
+															能量改变<BR>&nbsp;&nbsp;&nbsp; 30:
+															商铺购买<BR>&nbsp;&nbsp;&nbsp;
+															31:
+															装备升级<BR>&nbsp;&nbsp;&nbsp; 32:
+															寄售物品<BR>&nbsp;&nbsp;&nbsp;
+															33:
+															寄售购买<BR>&nbsp;&nbsp;&nbsp; 34:
+															个人商店<BR>&nbsp;&nbsp;&nbsp;
+															35:
+															行会酒泉<BR>&nbsp;&nbsp;&nbsp; 36:
+															挑战物品<BR>&nbsp;&nbsp;&nbsp;
+															37:
+															挖人形怪<BR>&nbsp;&nbsp;&nbsp; 38: NPC
+															酿酒<BR>&nbsp;&nbsp;&nbsp;
+															39:
+															获得矿石<BR>&nbsp;&nbsp;&nbsp; 40:
+															开启宝箱<BR>&nbsp;&nbsp;&nbsp;
+															41:
+															粹练物品<BR>&nbsp;&nbsp;&nbsp; 42:
+															拆分物品<BR>&nbsp;&nbsp;&nbsp;
+															43:
+															合并物品<BR>&nbsp;&nbsp;&nbsp; 44:
+															锻炼物品<BR>&nbsp;&nbsp;&nbsp;
+															45:
+															高级鉴定<BR>&nbsp;&nbsp;&nbsp; 46:
+															挖取宝物<BR>&nbsp;&nbsp;&nbsp;
+															111:
+															元宝改变<BR>&nbsp;&nbsp;&nbsp; 112:
+															游戏点改变<BR>&nbsp;&nbsp;&nbsp; 113:
+															金刚石改变<BR>&nbsp;&nbsp;&nbsp;
+															114:
+															灵符改变<BR>&nbsp;&nbsp;&nbsp; 116: 荣誉改变 <BR>
+															<FONT color=#00ff00>
+																【+】M2：物品数据库扩展内观特效、外观特效、背包特效、外观定时特效字段。<BR>【+】M2：增加JS引擎相关配置。功能设置-&gt;扩展功能-&gt;Extern.JS。
+																<BR>【+】M2：增加小退确认开关，选项-&gt;客户端管理-&gt;无小退确认。<BR>【+】M2：增加NPC指令QueryFormatString
+																S变量 文本
+																参数表，参数表以逗号结尾，支持变量（提示：将文本使用引号扩上可以避免文本内空格导致脚本执行错误）。<BR>　　例：QueryFormatString
+																S0 "%s,&nbsp; %s"
+																参数1,参数2,<BR>
+															</FONT>
+															<FONT color=#ff0000>【+】M2：扩展大窗口指令
+																SETBIGDIALOGBOX 文件序号[0-11]
+																图像序号[&gt;=
+																0]是否居中[TRUE/FALSE]
+																是否可移动[TRUE/FALSE]。<BR></FONT>
+															<FONT color=#a6caf0>　　0: ui1<BR>　　1:
+																NewopUI<BR>　　2:
+																Prguse<BR>　　3:
+																Prguse2<BR>　　4:&nbsp;Prguse3<BR>　　5:
+																ChrSel<BR>　　6:</FONT>
+															<FONT color=#00ff00>
+
+															</FONT>
+															<FONT color=#a6caf0>
+																<FONT size=2 face=宋体>
+																	<FONT color=#ffffff>
+																		<FONT size=4>
+																			<FONT color=#00ff00 size=2>
+																				<FONT color=#a6caf0>
+																					Prguse_16<BR>　　7:
+																					Prguse2_16<BR>　　8:
+																					Prguse3_16<BR>　　9:
+																					ChrSel_16<BR>　　10:
+																					ChrSel2_16<BR>　　11:
+																					ui</FONT>
+																				<BR>
+																				<FONT color=#ffff00>
+																					【+】M2：新增窗口播放特效指令
+																					DlgPlayEffect&nbsp;窗口类型[目前仅支持0，代表NPC对话框]&nbsp;文件序号&nbsp;图像序号&nbsp;播放张数&nbsp;播放间隔
+																					X
+																					Y&nbsp;考虑图像内置偏移[0/1]
+																					使用混合模式绘制[0/1]<BR>&nbsp;　　例如：DLGPLAYEFFECT
+																					0 6 640 19 120 0
+																					0&nbsp;1
+																					1<BR>
+																					<FONT color=#00ff00>
+																						【+】M2：套装支持斗笠。<BR>【+】M2：物品数据扩展最大精炼次数限制，现在每个物品可以单独设定最大精炼次数，物品精炼后最大属性不可超过32676，否则将引发属性溢出。
+																						<BR>【+】M2：增加物品鉴定列表AppraisalItem.SDB。<BR>【+】M2：增加合体技能绑定列表SuitMagList.SDB。
+																					</FONT> <BR>
+																					<FONT color=#ffffff>
+																						【+】M2：地图参数新增DROPRATE(倍率)，该参数将会使当前地图内所有由玩家杀死的怪物变为N倍爆率，其中倍率为百分数，例如2倍爆率则填200，该参数无视怪物的NORATE属性，强制生效，也可以填小于100的数值，此时为降低爆率。
+																						<FONT color=#00ff00>
+																							<BR>【+】M2：实现套装鉴定，套装系统支持无值属性模板。<BR>【+】M2：新增CHECKPROPCOUNT来检查属性数量，格式：CHECKPROPCOUNT
+																							位置 操作符[&gt;
+																							&lt; = ] 数量
+																							忽略品质[0/1]。<FONT
+																								color=#c0dcc0>
+																								<BR>
+																								<FONT color=#a6caf0>
+																									<FONT size=2
+																										face=宋体>
+																										<FONT
+																											color=#ffffff>
+																											<FONT
+																												size=4>
+																												<FONT
+																													color=#00ff00
+																													size=2>
+																													　　镶嵌宝石带来的属性不会对此产生影响。<BR>
+																													【+】M2：宝石镶嵌已支持镶嵌突变。
+																												</FONT>
+																												<FONT
+																													color=#00ff00
+																													size=2>
+																													<BR>
+																												</FONT>
+																												<FONT
+																													size=2>
+																													<FONT
+																														color=#ffffff>
+																														【+】M2、客户端：支持千里传音和传音筒，默认指令分别为@传和@筒。<BR>　　千里传音：7类Shape0<BR>　　传音筒：7类Shape5<BR>　　使用次数为
+																														DuraMax&nbsp;/
+																														1000
+																													</FONT>
+																													<FONT
+																														color=#00ff00>
+																														<BR>
+																													</FONT>
+																												</FONT>
+																												<FONT
+																													color=#ffffff
+																													size=2>
+																													【+】M2：SENDMSG新增13类消息，在屏幕中心显示文本<BR>
+																													　　格式：SENDMSG
+																													13
+																													消息文本
+																													前景色
+																													边框色
+																													显示时长(秒)<BR>　　SENDMSG
+																													13
+																													测试消息
+																													251
+																													0
+																													10
+																												</FONT>
+																												<FONT
+																													color=#00ff00>
+																													<FONT
+																														color=#ff0000
+																														size=2>
+																														<FONT
+																															color=#ffffff>
+																															<BR>
+																														</FONT>
+																														<FONT
+																															color=#ffffff
+																															size=2>
+																															【+】M2：增加GIVEMINE指令。格式：GIVEMINE
+																															名字
+																															质量/纯度/等级，适用于矿石(43类)、宝石(45类)、淬炼卷轴(48类)，其余物品无效。
+																															<BR>　　43类：0-65<BR>　　45类：0-255<BR>
+																															　　48类：0-21E
+																															<BR>
+																															<FONT
+																																color=#ffff00>
+																																【+】M2：增加脚本指令JSCALL
+																																JS文件名
+																																函数名
+																																参数(使用英文逗号分割，可为空)，用来执行JS脚本，详情查看Extern.JS。
+																															</FONT>
+																															<FONT
+																																color=#00ff00>
+																																<BR>
+																																<FONT
+																																	color=#ffff00>
+																																	【+】M2：增加$QFDOWNTIME人物变量，用来获取SendTimeMsg的倒计时。
+																																</FONT>
+																															</FONT>
+																															<BR>
+																															<FONT
+																																color=#ffff00>
+																																【+】M2：增加生成随机字符串指令RandomStr，详情查看镜像地图说明。<BR>【+】M2：增加MonGenByFile，详情查看镜像地图说明。
+																															</FONT>
+																															<FONT
+																																color=#00ff00
+																																size=2>
+																																<BR>
+																																<FONT
+																																	color=#ffff00>
+																																	【+】M2：增加ArrangeMirrorMapAliveTime指令，详情查看镜像地图说明。<BR>【+】M2：增加CheckMirrorMapArrangeTimes指令，详情查看镜像地图说明。<BR>
+																																</FONT>
+																																<FONT
+																																	color=#ffff00>
+																																	【+】M2：增加放置NPC指令NpcGen。详情查看镜像地图说明。
+																																</FONT>
+																																<BR>
+																																<FONT
+																																	color=#ffff00>
+																																	【+】M2：QF增加@MonDroppingItem，此脚本会在爆率内检查脚本之前执行，即爆率内调用的脚本可以覆盖@MonDroppingItem的操作。<BR>　　注意，在使用这两个脚本时不要对金币和灵气进行ReclaimItem和CheckReclaim操作，这两个不是真实的物品，只支持SetAllowDrop。<BR>【+】M2：ReclaimItem和CheckReclaim物品位置支持-2，表示即将爆出的物品。
+																																</FONT>
+																															</FONT>
+																															<FONT
+																																size=2>
+																																<FONT
+																																	color=#ff0000>
+																																	<BR>【+】M2：新增副本系统及其相关指令，详情查看功能脚本增强解析的【镜像地图(副本系统)】项。
+																																</FONT>
+																															</FONT>
+																															<BR>
+																															<FONT
+																																color=#ff0000
+																																size=2>
+																																【+】M2、客户端：宝石镶嵌完成。<BR>【+】M2：怪物爆率支持加密。<BR>【+】M2：新增RECLAIMITEMDLG
+																																参数[0-?]
+																																用来打开天工开物的窗口，目前仅有0号窗口，宝石镶嵌。<BR>
+																																<FONT
+																																	color=#00ff00>
+																																	【+】M2：增加GetReclaim指令，GetReclaim
+																																	装备位置
+																																	属性位置
+																																	变量，取指定位置值到变量。<BR>
+																																	<FONT
+																																		color=#ff0000>
+																																		<FONT
+																																			color=#00ff00>
+																																			【+】M2：完善技能学习和技能读取规则，现已可以近乎完美区分主体、白日门、秘族、通用技能，还需要更多的测试，技能数据库已进行扩展。<BR>【+】M2：合击系统更新：允许设置怒气条最大值、每次增加点数、每次增加的最大点数（从根本上杜绝秒秒合击）、无火龙之心模式、火龙之心耐久扣除方式、怒气回复的参数设置。&nbsp;
+																																			<BR>
+																																			<FONT
+																																				color=#ff0000>
+																																				【+】M2：增加装备成长支持当装备被M2自动打孔时刷新人物属性。<BR>
+																																				<FONT
+																																					color=#ffffff>
+																																					【+】客户端：增加自定义图标和自定义Logo，位于资源文件夹根目录（即Resource内），分别为mir.ico和Splash.png。
+																																				</FONT>
+																																				<FONT
+																																					color=#00ff00>
+																																					<BR>【+】客户端：增强自定义UI功能
+																																				</FONT>
+																																				<FONT
+																																					color=#ff0000>
+																																					<BR>【+】客户端：支持ASCII字符进行转义（仅限NPC对话内），用法：#对应字符的ASCII（0-127），具体ASCII值去百度。<BR>
+																																					<FONT
+																																						color=#00ff00>
+																																						【+】客户端：文本伪控件支持任意颜色，是使用$BGR标识的十六进制数。<BR>　　
+																																						示例：$0000FF为红色，也可以使用传统的调色板颜色，也支持Delphi内的系统颜色，例如clLime等。
+																																					</FONT>
+																																				</FONT>
+																																				<BR>
+																																				<FONT
+																																					color=#00ff00>
+																																					【+】客户端：支持合体技能逻辑、支持技能图库修改。<BR>【+】客户端：新增自定义物品描述，兼容旧版物品描述。<BR>
+																																					<FONT
+																																						color=#ffffff>
+																																						【+】客户端：内挂增加光柱开关选项。
+																																					</FONT>
+																																					<FONT
+																																						color=#ff0000>
+																																						<BR>
+																																						<FONT
+																																							color=#ffffff>
+																																							【+】客户端：支持新属性显示。<BR>【+】客户端：调整物品属性显示，现在更加紧凑。<BR>
+																																						</FONT>
+																																					</FONT>
+																																					【+】客户端：重写内观特效显示，旧版特效显示全部移除，请使用自定义特效重做。<BR>【+】客户端：衣服、武器、头盔、斗笠的内观全部支持内观特效。<BR>【+】客户端：新增CustomEffect.Data~CustomEffect10.data用于存储特效。<BR>
+																																					<FONT
+																																						color=#ff0000>
+																																						【+】客户端：NPC对话支持伪控件文本，暂时仅支持动画、按钮、进度条和静态图片，复选框已在开发中。<BR>
+																																					</FONT>
+																																					<FONT
+																																						color=#a6caf0>
+																																						　　
+																																						<FONT
+																																							color=#c0dcc0>
+																																							置入动画：
+																																						</FONT>
+																																						<BR>
+																																						　　&lt;PlayImg=
+																																						文件序号,开始图片,播放张数,播放间隔,X,Y,播放效果(0普通,
+																																						1混合),是否循环(0-不循环,1-循环),注释信息/@Label
+																																						<FONT
+																																							color=#a6caf0
+																																							size=2>
+																																							&gt;<BR>　　
+																																							<FONT
+																																								color=#c0dcc0>
+																																								置入伪按钮：
+																																							</FONT>
+																																							<BR>　　&lt;BTN=文件序号,普通图片,X,Y,经过图片,按下图片,文本普通颜色,文本经过颜色,文本按下颜色,文本(填NULL为不显示),鼠标经过提示信息(填NULL为不显示)/@触发字段&gt;<BR>　　
+																																							<FONT
+																																								color=#c0dcc0>
+																																								置入伪进度条：
+																																							</FONT>
+																																							<BR>　　&lt;PROC=文件序号,进度条前景图,进度条背景图,前景图横向偏移,前景图纵向偏移,X,Y,当前值,最大值,是否显示数值(0,1),数值显示模式(0-原样显示,1-百分比),文字颜色&gt;<BR>　　
+																																							<FONT
+																																								color=#c0dcc0>
+																																								置入静态图片：
+																																							</FONT>
+																																							<BR>　　&lt;IMG=文件序号,图片ID,X,Y&gt;<BR>
+																																							<FONT
+																																								color=#c0dcc0>
+																																								<FONT
+																																									color=#a6caf0>
+																																									　　
+																																								</FONT>
+																																								置入复选框：
+																																								<BR>
+																																							</FONT>
+																																							<FONT
+																																								color=#ffffff>
+																																								　　
+																																							</FONT>
+																																							<FONT
+																																								color=#a6caf0>
+																																								&lt;CHK=文件序号,勾选图,背景图,勾选图衡偏移,勾选图纵偏移,X,Y,是否已勾选(0,非0),文本颜色,选中颜色,按下颜色,文本提示,鼠标提示/@触发字段&gt;<BR>　　
+																																								<FONT
+																																									color=#c0dcc0>
+																																									置入标签：
+																																								</FONT>
+																																								<BR>　　&lt;LABEL=X,Y,Color,Size,字体名,Bold,UnderLine,文本&gt;
+
+																																							</FONT>
+																																							<BR>
+																																						</FONT>
+																																					</FONT>
+																																					<FONT
+																																						color=#a6caf0
+																																						size=2>
+																																						　　
+																																						<FONT
+																																							color=#ff0000>
+																																							注：XY均为相对偏移，不是绝对位置。
+																																						</FONT>
+																																						<BR>
+																																						<FONT
+																																							color=#00ff00>
+																																							【!】M2：完善ClearMapMon指令的检测，规避可能的引发错误。
+																																						</FONT>
+																																					</FONT>
+																																				</FONT>
+																																				<FONT
+																																					color=#00ff00>
+																																					<FONT
+																																						color=#a6caf0
+																																						size=2>
+																																						<BR>
+																																						<FONT
+																																							color=#00ff00>
+																																							【!】M2：修复准确属性无法正确计算。<BR>【!】M2：MovR指令调整：MovR
+																																							变量
+																																							参数1
+																																							参数2<BR>　　如果参数2为空，则结果为[0,
+																																							参数1)<BR>
+																																						</FONT>
+																																						<FONT
+																																							color=#00ff00>
+																																							　　如果参数2不为空，则结果为[参数1,
+																																							参数2)<BR>【!】M2：SUM指令调整：SUM
+																																							变量
+																																							参数1<BR>　　变量
+																																							=
+																																							变量
+																																							+
+																																							参数1<BR>【!】M2：MESSAGEBOX命令更新：MESSAGEBOX
+																																							信息
+																																							@确定触发
+																																							@取消触发<BR>
+																																							　　其中触发脚本位于QF内。<BR>【!】M2：魔法数据库变更：支持修改魔法图像使用的图库。<BR>【!】M2：修复人形怪设置不生效的问题。<BR>
+																																							<FONT
+																																								face=宋体>
+																																								<FONT
+																																									color=#ffffff>
+																																									<FONT
+																																										size=2>
+																																										<FONT
+																																											color=#00ff00>
+																																											<FONT
+																																												color=#00ff00>
+																																												<FONT
+																																													color=#ff0000>
+																																													<FONT
+																																														color=#00ff00>
+																																														【!】M2：修复升级时经验跳变42E的问题。<BR>【!】M2：重写转生所需升级经验获取方式，现在可以在!SetUp.txt内自定义每级转生升级所需经验。<BR>
+																																														<FONT
+																																															color=#ffffff>
+																																															【!】M2：调整流行火雨细节。
+																																														</FONT>
+																																													</FONT>
+																																													<BR>【!】M2：修复英雄学习技能时存在的问题。<BR>【!】M2；修复HAVEHERO无效的问题。
+																																													<FONT
+																																														color=#c0dcc0>
+																																														<BR>
+																																													</FONT>
+																																													<FONT
+																																														color=#00ff00>
+																																														<FONT
+																																															color=#00ff00>
+																																															【!】
+																																														</FONT>
+																																														M2：修复战士技能MaxTrainLv2无效的问题。<BR>
+																																														<FONT
+																																															color=#00ff00>
+																																															【!】
+																																														</FONT>
+																																														M2：修复练功师不显示魔法伤害的问题。<BR>
+																																													</FONT>
+																																													<FONT
+																																														color=#00ff00>
+																																														【!】M2：CheckMirrorOwner修改为CheckMirrorOwner
+																																														地图名
+																																														角色名<BR>【!】M2：调整角色头发计算方式。<BR>【!】M2：人物标志量（即SET/CHECK）提升到7999个[1-7999]。
+																																													</FONT>
+																																													<FONT
+																																														color=#c0dcc0>
+																																													</FONT>
+																																													<FONT
+																																														color=#c0dcc0>
+																																														<BR>
+																																														<FONT
+																																															color=#ffffff>
+																																															【!】M2：调整玩家上线检测逻辑，现在在镜像地图下线，如果上线时镜像已不存在，将会以原血量飞回主城，而不是之前的空血飞回。
+																																														</FONT>
+																																														<FONT
+																																															color=#00ff00>
+																																															<BR>
+																																														</FONT>
+																																														<FONT
+																																															size=2>
+																																															<FONT
+																																																color=#ff0000>
+																																																【!】M2：MonGenEx指令更新，修复遇到一只怪没法刷之后就停止后续刷怪的问题，支持Range为0，即原地刷怪。<BR>
+																																															</FONT>
+																																															<FONT
+																																																color=#00ff00>
+																																																【!】M2：MonGenEx支持自定义怪物名颜色，格式：怪物名|颜色
+																																															</FONT>
+																																															<FONT
+																																																color=#ff0000>
+																																																<BR>【!】M2：MonGenEx支持多线程刷怪，参数7设置为1即可，设置为0则为旧式For循环刷怪。<BR>　　
+																																															</FONT>
+																																														</FONT>
+																																														<FONT
+																																															size=2>
+																																															<FONT
+																																																color=#c0dcc0>
+																																																尽管多线程刷怪可做到大量怪物迅速刷出而对M2的影响较小，但为预防未知的问题，保留For循环模式。<BR>
+																																															</FONT>
+																																															<FONT
+																																																color=#ff0000>
+																																																【!】M2：MonGenEx支持多线程刷怪线程存活最大时间，参数8设置为50-10000即可，实际等待时间为
+																																																参数8&nbsp;/
+																																																1000，即参数8填入的是毫秒。<BR>&nbsp;　　为了防止怪物一直刷不出来卡线程从而卡CPU进而导致卡M2，建议存活时间不要设置过大。<BR>
+																																																<FONT
+																																																	color=#00ff00>
+																																																	【!】M2：解决几处较大块的内存泄漏。
+																																																</FONT>
+																																																<BR>【!】M2：调整物品计算套装的方式，精简物品数据结构，节省大量内存。
+																																																<FONT
+																																																	color=#00ff00>
+																																																	<BR>
+																																																	<FONT
+																																																		color=#ff0000>
+																																																		【!】M2：修复CheckReclaim和GetReclaim对-1位置操作无效的问题。
+																																																	</FONT>
+																																																</FONT>
+																																															</FONT>
+																																														</FONT>
+																																													</FONT>
+																																												</FONT>
+																																											</FONT>
+																																										</FONT>
+
+																																									</FONT>
+																																								</FONT>
+																																							</FONT>
+																																						</FONT>
+																																					</FONT>
+																																				</FONT>
+																																			</FONT>
+																																		</FONT>
+																																	</FONT>
+																																</FONT>
+																															</FONT>
+																															<BR>
+																															<FONT
+																																color=#359b66
+																																size=3>
+																																<FONT
+																																	color=#ffffff
+																																	size=2>
+																																	【!】M2、客户端：重写部分宝石显示逻辑，现在宝石内观、外观、镶嵌后显示均与数据库同步，因此如果宝石在数据库中不存在，则显示会异常。<BR>【!】M2：优化服务器发送客户端配置，减小网络压力。<BR>
+																																</FONT>
+																																<FONT
+																																	color=#00ff00
+																																	size=2>
+																																	【!】M2、客户端：攻魔道防御魔防支持21E。<BR>
+																																	<FONT
+																																		color=#ffffff>
+																																		【!】M2：增加经络控制连击修炼等级的开关，允许修炼经络，取消区分主体和英雄连击技能，统一使用主体技能。
+																																		<FONT
+																																			color=#00ff00>
+																																			<BR>
+																																			【!】M2：统一ReclaimItem的模式为置入，已经不再存在在原有数值增加的属性位置。<BR>【!】M2：ReclaimItem所有【设置数值】的属性位置已支持清空，清空后数值归0。<BR>
+																																			<FONT
+																																				color=#ff0000>
+																																				【!】M2：修复ReclaimItem和CheckReclaim使用参数-2时无法正确执行的问题。<BR>
+																																				<FONT
+																																					color=#00ff00>
+																																					【!】M2：修复英雄不会发动龙影剑法。
+																																					<FONT
+																																						color=#ffff00>
+																																						<BR>
+																																					</FONT>
+																																					<FONT
+																																						color=#ff0000>
+																																						<FONT
+																																							color=#00ff00>
+																																							【!】M2：调整爆率内检查脚本的触发时机，由物品确认爆出后执行改为即将爆出时执行，顺序在MonDroppingItem之后，即可以覆盖MonDroppingItem的操作。
+																																						</FONT>
+																																						<BR>
+																																						<FONT
+																																							color=#00ff00>
+																																							【!】M2：修复护体神盾卡人物的问题。
+																																						</FONT>
+																																						<BR>
+																																						<FONT
+																																							color=#00ff00>
+																																							【!】M2：调整护体神盾为被动技能时无出招动作，直接发动。<BR>
+																																							<FONT
+																																								color=#ffffff>
+																																								【!】M2：修复即使武器未设置刀魂，升级之后依然显示刀魂条的问题。
+																																							</FONT>
+																																							<FONT
+																																								color=#ff0000>
+																																								<BR>
+																																							</FONT>
+																																							<FONT
+																																								color=#ffffff>
+																																								【!】M2：重构优化天赋属性计算的代码。
+																																							</FONT>
+																																							<BR>
+																																							<FONT
+																																								color=#ffffff>
+																																								【!】M2：修改护体神盾触发机制。
+																																							</FONT>
+																																							<BR>
+																																							<FONT
+																																								color=#ff0000>
+																																								【!】M2：修复英雄死亡时M2报错。<BR>
+																																								<FONT
+																																									color=#00ff00>
+																																									【!】M2：修复秘族英雄死亡后，即使原本能召唤白日门英雄也会被重置召唤时间的问题。
+																																								</FONT>
+																																								<BR>
+																																								<FONT
+																																									color=#00ff00>
+																																									【!】M2：修改合击锁定模式，增加不检查攻击目标直接释放（主体和英雄都有各自的攻击目标时优先攻击主体的目标）。
+																																								</FONT>
+																																								<FONT
+																																									color=#00ff00>
+																																									<BR>
+																																								</FONT>
+																																								<FONT
+																																									color=#ffffff>
+																																									【!】M2：调整游戏内时间的计算方式。
+																																								</FONT>
+																																							</FONT>
+																																						</FONT>
+																																					</FONT>
+																																				</FONT>
+																																			</FONT>
+																																		</FONT>
+																																	</FONT>
+																																</FONT>
+																															</FONT>
+
+																														</FONT>
+																													</FONT>
+																												</FONT>
+																											</FONT>
+																										</FONT>
+																									</FONT>
+																								</FONT><BR>
+																							</FONT>
+																						</FONT>
+
+
+																					</FONT>
+																				</FONT>
+																			</FONT>
+																		</FONT>
+																	</FONT>
+																</FONT>
+															</FONT>
+														</FONT>
+													</FONT>
+												</FONT>
+											</FONT>
+										</FONT>
+									</FONT>
+								</FONT>【!】客户端：支持自定义物品过滤名颜色<BR>【!】客户端：优化飘血效率。<FONT color=#359b66 size=3>
+									<FONT color=#00ff00 size=2><BR>【!】客户端：修复选择人物界面转生图标显示错误</FONT>
+								</FONT>
+							</FONT>
+							<FONT color=#ff0000>
+								<FONT color=#00ff00><BR></FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT color=#ffffff>
+					<FONT size=2>
+						<FONT color=#00ff00>
+							<FONT color=#ff0000>
+								<FONT color=#00ff00>
+									【!】客户端：文本伪按钮细节优化：当普通图片与按下图片编号一致时，按下后文字无下沉效果。<BR>【!】客户端：文本伪按钮细节优化：当按钮没有触发字段时，按下后文字无下沉效果。
+								</FONT>
+							</FONT>
+							<FONT color=#00ff00><BR>【!】客户端：修复合体后小退再上线合体按钮消失的问题。</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+				<FONT face=宋体>
+					<FONT color=#ffffff>
+						<FONT size=2>
+							<FONT color=#00ff00><BR>【!】客户端：修复快捷栏物品无法直接丢弃的问题。</FONT>
+							<FONT color=#00ff00>
+								<BR>【!】客户端：优化伪控件使用体验，现在点在可点击的地方不会拖动窗口。<BR>【!】客户端：优化任务窗口使用体验，现在点在可点击的地方不会拖动窗口。
+							</FONT>
+							<FONT color=#ff0000>
+								<FONT color=#ffffff><BR></FONT>
+							</FONT>
+							<FONT color=#ff0000>
+								<FONT color=#ffffff>【!】客户端：调整客户端画面流畅度。<FONT size=2>
+										<FONT color=#00ff00><BR> 【!】客户端：修复装备属性显示错误。</FONT>
+									</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+						<BR>
+						<FONT color=#ff0000 size=2>【!】客户端：修复公网服务器无法正常获取服务器列表的问题。</FONT>
+						<FONT color=#ffffff size=2>
+							<BR>【!】客户端：修复内挂部分勾选框无法正确反馈勾选情况。<BR>【!】客户端：调整斗笠Shape为1时不在人物装备界面显示。<BR>【!】客户端：修复角色信息界面头盔位置细节问题。
+							<FONT color=#00ff00><BR>【!】客户端：调整角色头发计算方式，连击的头发可能暂时无法使用。<BR>
+								<FONT color=#c0dcc0>
+									　　头发调整如下：现在仅使用Hair2.Data，由于M2数据限制，斗笠和头发都是0-15。<BR>　　每种头发(或斗笠)都是1200张图(即男女各600)<BR>　　其中斗笠需要在数据库设置Anicount字段，0为不外显，其余自己根据Hair2去算。
+									<FONT color=#a6caf0 size=2> <BR>
+										<FONT color=#00ff00>
+											【!】客户端：调整大小地图文字描述细节。<BR>【!】客户端：修复客户端初始化时资源未正确释放。<BR>
+											<FONT color=#ffffff>
+												【!】客户端：修复通过快捷键切换全屏画面依然为填充屏幕的问题。<BR>【!】客户端：修改套装显示方式，M2端颜色设置为0显示系统默认颜色。
+												<FONT color=#00ff00>&nbsp;</FONT>
+											</FONT>
+											<FONT color=#00ff00> <BR>
+												<FONT color=#ffffff>
+													【!】客户端：小地图计算逻辑变更：超过556的部分从下标1000（即MiniMap.txt内从1001开始）开始，放在MiniMap.data内(即MiniMap的0下标表示的是1000)。<BR>　　举例：<BR>　　MiniMap.data内0下标放了一张图，如果想小地图显示它，MiniMap.txt内要填1001，后面以此类推。
+												</FONT>
+												<FONT color=#a6caf0>
+													<FONT size=2 face=宋体>
+														<FONT color=#ffffff><STRONG>
+																<FONT size=3><BR></FONT>
+															</STRONG>
+															<FONT color=#00ff00>
+																【!】客户端：修复全屏时画面显示。<BR>
+																<FONT color=#ffffff>【!】客户端：调整英雄包裹物品显示细节。
+																</FONT>
+															</FONT>
+															<FONT color=#359b66 size=3><BR>
+																<FONT color=#ffffff size=2>
+																	【!】客户端：完善连击界面，支持连击技能修炼。
+																</FONT>
+															</FONT>
+															<FONT color=#359b66 size=3><STRONG><BR></STRONG>
+																<FONT color=#ffffff size=2>
+																	【!】客户端：修复客户端部分装备属性显示异常问题。<BR>【!】客户端：修复经络和连击，修复技能过多无法显示技能的问题。现已支持连击版外传。
+																</FONT><BR>
+															</FONT>
+															<FONT color=#359b66 size=3>
+																<FONT color=#00ff00 size=2>
+																	【!】客户端：修正英雄天赋页面无法翻页的问题。
+																</FONT>
+																<BR>
+															</FONT>【!】客户端：修复武器不设置刀魂技能时缺少分割线的问题。<FONT color=#ff0000>
+															</FONT><BR>
+														</FONT>
+														<FONT color=#ffffff>【!】客户端：完善技能及技能书的显示。</FONT>
+													</FONT>
+												</FONT>
+											</FONT>
+										</FONT>
+									</FONT>
+								</FONT>
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+				<FONT face=宋体>
+					<FONT color=#ffffff>
+						<FONT size=2>
+							<FONT color=#359b66 size=3><BR></FONT>
+							<FONT color=#00ff00>
+								【!】DBS：移除无用的加载物品数据库和技能数据库。<BR>【+】GameCenter：支持选择M2的数据模式[SDB和SQL]（人物数据、账号数据仍然使用SQL模式未做改变）。
+							</FONT>
+						</FONT>
+						<FONT color=#ff0000>
+							<FONT size=2>&nbsp;
+							</FONT>
+						</FONT>
+
+					</FONT>
+				</FONT>
+				<FONT size=2 face=宋体>
+					<FONT color=#ffffff>
+						<FONT size=4>
+							<FONT color=#359b66 size=3>
+								<FONT color=#00ff00 size=2>
+									<BR>
+									【+】工具包：合区工具匹配最新版数据。
+								</FONT>&nbsp;
+								<BR>
+							</FONT>
+						</FONT>
+					</FONT>
+				</FONT>
+			</FONT>
+			<FONT face=宋体>
+				<FONT size=2 face=宋体>
+					<FONT color=#ffffff>
+						<FONT size=4>
+							<FONT color=#359b66 size=3>
+								<FONT color=#00ff00 size=2>
+									【+】工具包：新增SDB编辑器，扩展物品过滤生成工具，将SDB编辑器与物品过滤生成合并（独立于ToolCenter）。
+								</FONT>
+								<BR>
+							</FONT>
+							<FONT color=#00ff00 size=2>
+								<FONT color=#a6caf0>
+									<FONT color=#00ff00>
+										【+】工具包：支持Borland数据库转V2的SQL和CSV(仅限商业版)。<BR>【+】工具包：新增任务编辑器（独立于ToolCenter，为单独工具）。<BR>【+】工具包：新增变量占用检查工具（独立于ToolCenter，为单独工具）。
+									</FONT>
+								</FONT>
+
+							</FONT><BR>
+							<FONT color=#359b66 size=3><BR>
+								<FONT color=#ff00ff size=2>说明：定时特效以玩家的客户端时间计时为准，因此每个玩家看到特效的时间都不同。<BR></FONT>
+								<FONT color=#a6caf0 size=2>
+									注意：外观特效如果区分男女需要为男女相连，男在前女在后，客户端自动根据性别取对应的图像（目前男女各600张，系统根据职业和性别自动取【如果后续更新刺客，则普通职业男女各600，刺客男女各888】）。<BR>当然了，你也可以把男女特效拆分成两个，然后男女分别使用，但这也就仅限于衣服才能办到，毕竟武器不分男女。<BR>内观、包裹的旧版特效已经全部移除，人物外观特效目前还保留（旧的人物翅膀与新的衣服自定义外观特效共用，因此二者不兼容）。<BR>
+								</FONT>
+							</FONT>
+						</FONT>
+					</FONT>
+				</FONT>
+			</FONT>
+		</FONT>
+	</body>
+
+</html>

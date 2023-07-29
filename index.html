@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>V2SOFT</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+		<script>
+			window.onload = function(){
+                                if(document.getElementsByClassName){
+				var arr = document.getElementsByClassName("controlled");
+				for(var i = 0; i < arr.length; i++){
+					arr[i].style.display = "none";
+				}
+				
+				var check_text = document.getElementById('category');
+				//addEventListener()方法可以避免在html代码中内嵌 js方法
+				check_text.addEventListener("click", function () {
+					if(check_text.checked) {
+						var arr = document.getElementsByClassName("controlled");
+						for(var i = 0; i < arr.length; i++){
+							arr[i].style.display = "";
+						}
+					} else {
+						var arr = document.getElementsByClassName("controlled");
+						for(var i = 0; i < arr.length; i++){
+							arr[i].style.display = "none";
+						}
+					}
+				});
+                                } else {
+                                    var check_text = document.getElementById('chek');
+                                    check_text.style.display = 'none';
+                                }
+			};
+			
+		</script>
+                
+	</head>
+	<body>
+		<section id="main_nav">
+				<div class="main_webname">
+					<p>V2Soft</p>
+					<p class="main_link">
+						www.v2m2.top
+					</p>
+				</div>
+			</span>
+			<span>
+				<div class="main_sub_nav">
+					<span><!-- <a href="http://i.v2m2.top/">用户中心</a> -->暂未开放</span>
+					<span><a href="changelog.htm" target="_blank">更新记录</a></span>
+					<span><!-- <a href="#">暂未开放</a> -->暂未开放</span>
+				</div>
+			</span>
+		</section>
+		<section id="main_head">
+			<table>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>网站公告</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3" class="inner_padding12">
+						<p class="notice">V2引擎没有官方群！所有与V2引擎相关的群不代表V2引擎的立场！</p>
+						<p class="notice">说点题外话，下面这些软件都是作者一个人在维护，所以我就算是三头六臂，也没法跟工作室比，更何况我不是三头六臂。</p>
+						<p class="notice">所以很容易就会出现有些软件长时间不更新，以及缺少测试人员使得软件无法得到全面的测试，从而会遇到各种奇葩问题，遇到这种情况希望各位用户能够动动小手反馈一下。</p>
+						<p class="notice">有你们的支持，V2引擎才能走得更远。</p>
+					</td>
+				</tr>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>更新计划</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3" class="inner_padding12">
+						<p class="notice">下面的内容已经在更新计划内，相关功能将逐步进行更新（不区分先后顺序）。</p>
+						<ul class="todo_list">
+							<li><label for="" class="">天工开物系统</label></li>
+							<li><label for="" class="">自定义OK框</label></li>
+							<li><label for="" class="">对话物品框</label></li>
+							<li><label for="" class="">完善商城系统</label></li>
+							<li><label for="" class="">雷炎、石原、瘟疫沼泽怪物</label></li>
+							<li><label for="" class="deleted">月灵配置完善</label></li>
+							<li><label for="" class="">分身术细节</label></li>
+							<li><label for="" class="deleted">英雄死亡后半分钟自动收回</label></li>
+							<li><label for="" class="">技能书、书页和淬炼结晶填补火龙之心</label></li>
+							<li><label for="" class="">婚戒铭刻及相应的传送功能</label></li>
+							<li><label for="" class="">登录器自动创建快捷方式改为可选</label></li>
+							<li><label for="" class="">命运之战、王城战相关功能</label></li>
+							<li><label for="" class="">九龙轴</label></li>
+							<li><label for="" class="">套装的外传属性</label></li>
+							<li><label for="" class="">骑战</label></li>
+							<li><label for="" class="">宠物</label></li>
+							<li><label for="" class="">自动捡物功能加强</label></li>
+							<li><label for="" class="">爆率透视</label></li>
+							<li><label for="" class="">预置外传1.0/2.0/3.0/5.0/新外传的UI</label></li>
+							<li><label for="" class="">自定义UI功能完善</label></li>
+							<li><label for="" class="">开放自定义角色、怪物动作接口</label></li>
+							<li><label for="" class="">开放自定义怪物图像、声音接口</label></li>
+							<li><label for="" class="">Extern.JS功能完善、内核升级</label></li>
+							<li><label for="" class="">插件API完善</label></li>
+							<li><label for="" class="">内挂的挂机系统优化</label></li>
+							<li><label for="" class="">假人系统</label></li>
+							<li><label for="" class="">英雄AI优化</label></li>
+							<li><label for="" class="">珍珑岛相关功能</label></li>
+							<li><label for="" class="">超级技能</label></li>
+							<li><label for="" class="">刀魂属性扩展及数据自定义</label></li>
+							<li><label for="" class="">Shape.Json编辑工具</label></li>
+							<li><label for="" class="">数据通</label></li>
+							<li><label for="" class="">刷怪配置可视化编辑器</label></li>
+							<li><label for="" class="">SQLite版合区工具</label></li>
+							<li><label for="" class="">网关、M2反外挂插件接口</label></li>
+							<li><label for="" class="">客户端插件接口</label></li>
+							<li><label for="" class="">反外挂服务器</label></li>
+							<li><label for="" class="">拍卖行系统</label></li>
+							<li><label for="" class="">新外传技能石系统</label></li>
+							<li><label for="" class="">几种新出的特戒效果</label></li>
+							<li><label for="" class="">酿酒系统</label></li>
+							<li><label for="" class="">牛气值系统</label></li>
+							<li><label for="" class="">灵媒</label></li>
+							<li><label for="" class="">限时装备</label></li>
+							<li><label for="" class="">限时绑定</label></li>
+						</ul>
+						
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section id="main_body" name="download">
+			<table>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>免责声明</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3" class="inner_padding12">
+						V2引擎为网络开源代码修复而来，仅供技术交流使用，请在下载后的24小时内删除！<br/>
+						<!-- V2游戏引擎仅用于《热血传奇》®的衍生游戏《传奇外传》®的PC端游戏开发核心支撑。	<br/> -->
+						任何单位、组织或个人通过V2引擎进行“单机游戏”以外的行为的，应确保已获得《热血传奇》<!-- ® -->相关版权方的许可。<br/>
+						
+						因使用V2游戏引擎引发法律后果的，相关后果及责任由该行为的行为人所自行承担，与程序及程序作者无关。<br/>
+						<p style="color: red; text-align: left;">V2引擎不推荐、不建议也不支持任何未经《热血传奇》<!-- ® -->权利方授权的非个人单机娱乐行为。</p>
+						您使用V2Soft提供的软件成功架设服务端即表示您已悉知并同意不会将V2Soft提供的软件用于侵犯相关权利方的合法权益。<br/>
+						如果您认为软件侵犯了您的合法权益，请联系我们，我们将会在收到通知后尽快移除相关内容以维护您的合法权益。<br/><br/>
+						<label id = "chek"><input type="checkbox" name="category" value="同意" id="category"/>我已知晓、同意并接受上述内容</label>
+					</td>
+				</tr>
+				
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>最新版引擎下载</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>V2外传版引擎[<span for="" class="_version">Full.20230401+Update.20230430</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td>外传1.0版引擎</td>
+				</tr>
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>测试用服务端</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>测试用服务端[<span for="" class="_version">20230430+</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/1whbhTnocwbLXNrbE1TLW5g?pwd=whun" target="_blank">点击下载</a></td>
+					<td>资源源自网络，仅供单机测试使用，请勿用于其他用途！</td>
+				</tr>
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>插件及工具</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>微端工具[<span for="" class="_version">20230318</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>登录器配置器[<span for="" class="_version">20230501</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>V2模式加密插件[<span for="" class="_version">20230323</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td>支持自设密码，不绑定机器码，在原有基础上增强加密强度</td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>IGE模式加密插件(普通版)[<span for="" class="_version">20230411</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td>不支持自设密码</td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>IGE模式加密插件(密码版)[<span for="" class="_version">20230402</span>]</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td>支持自设密码，不绑定机器码，按IGE模式生成插件，加密过的脚本与商业版不通用</td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>IGE模式加密插件(商业版)[<span for="" class="_version">20230402</span>]</span></td>
+					<td class="_4char"><!-- <a href="#download" target="_blank">点击下载</a> -->暂不开放</td>
+					<td>支持自设密码，绑定机器码，换机器后插件失效，使用调整过的模式生成插件，加密过的脚本与密码版不通用</td>
+				</tr>
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>示例下载</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td colspan="3">
+						<table>
+							<tr class="td_title">
+								<td colspan="3"><span><strong>插件示例</strong></span></td>
+							</tr>
+							<tr class="td_body">
+								<td><span>自定义脚本解密插件示例[<span for="" class="_version">20230323</span>]</td>
+								<td class="_4char deleted"><a href="#download">点击下载</a></td>
+								<td>Delphi版</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+			</table>
+		</section>
+		<section id="main_update">
+			<table>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>更新记录</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3">
+						<p class="notice">
+							<iframe src="changelog.htm" frameborder="0" id="update_htm"></iframe>
+						</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="main_footer">
+			<div id="main_footer_content">
+				<!-- <div class="centercontent_block">【健康游戏忠告】<br/>抵制不良游戏，拒绝盗版游戏。<br/>注意自我保护，谨防受骗上当。<br/>适度游戏益脑，沉迷游戏伤身。<br/>合理安排时间，享受健康生活。</div>
+				<hr/> -->
+				<div class="copyright">&copy; 2022-2023 V2Soft V2M2.Top All Rights Reserved.</div>
+				
+			</div>
+		</section>
+	</body>
+</html>
