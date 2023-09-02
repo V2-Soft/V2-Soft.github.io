@@ -1,17 +1,188 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>V2游戏引擎</title>
-	<link rel="stylesheet" href="./css/main.css">
-	<style>
-		*{
-			color: white;
-		}
-	</style>
-</head>
-<body style="background-color: RGB(120, 120, 120);">
-	<div style="text-align: center;">
-		<h1>战略停更一段时间，看情况决定是否恢复。。。</h1>
-	</div>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>V2游戏引擎</title>
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<meta name="copyright" content="©V2Soft. All Rights Reserved.">
+		<noscript>
+			<strong>请开启JavaScript后再继续</strong>
+			<style type="text/css">
+				body { display:none; }
+			</style>
+		</noscript>
+		<script>
+			window.onload = function(){
+				if(document.getElementsByClassName){
+					var arr = document.getElementsByClassName("controlled");
+					for(var i = 0; i < arr.length; i++){
+						arr[i].style.display = "none";
+					}
+					
+					var check_text = document.getElementById('category');
+					//addEventListener()方法可以避免在html代码中内嵌 js方法
+					check_text.addEventListener("click", function () {
+						if(check_text.checked) {
+							var arr = document.getElementsByClassName("controlled");
+							for(var i = 0; i < arr.length; i++){
+								arr[i].style.display = "";
+							}
+						} else {
+							var arr = document.getElementsByClassName("controlled");
+							for(var i = 0; i < arr.length; i++){
+								arr[i].style.display = "none";
+							}
+						}
+					});
+				} else {
+					var check_text = document.getElementById('chek');
+					check_text.style.display = 'none';
+					document.write('<h1>请升级您的浏览器！</h1>');
+				}
+			};
+			
+		</script>
+		
+		<style>
+			footer {
+				background-color: black;
+				padding: 16px 0;
+			}
+
+			.copy {
+				width: 1024px;
+
+				margin: 0 auto;
+				color: gray;
+				font-size: 9px;
+
+			}
+
+			.copy_logo {
+				width: 180px;
+				height: 46px;
+
+			}
+
+			.copycont {
+				display: inline-flex;
+
+			}
+
+			.inlinebox {
+				margin-left: 16px;
+				padding-left: 16px;
+				border-left: 1px solid gray;
+			}
+
+			.copyinfo {
+				text-align: center;
+				margin-top: 8px;
+				border-top: 1px solid gray;
+				padding-top: 8px;
+			}
+
+		</style>
+                
+	</head>
+	
+	<body>
+		<section id="main_nav">
+				<div class="main_webname">
+					<p>V2Soft</p>
+					<p class="main_link">
+						www.v2m2.top
+					</p>
+				</div>
+			</span>
+			<span>
+				<div class="main_sub_nav">
+					<span><!-- <a href="http://i.v2m2.top/">用户中心</a> -->暂未开放</span>
+					<span><a href="changelog.htm" target="_blank">更新记录</a></span>
+					<span><!-- <a href="#">暂未开放</a> -->暂未开放</span>
+				</div>
+			</span>
+		</section>
+		<section id="main_head">
+			<table>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>网站公告</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3" class="inner_padding12">
+						<p class="notice">交流群号：592533745</p>
+						<p>【友情提示】：交流群仅为广大游戏爱好者提供一个交流和学习的平台，群管理所做一切事务均为本程序无关，管理作用为清理发布<BR/>
+							违法、违规信息人员，因管理人员均为网友请勿和管理涉及金额担保或者交易，任何私下交易均和本群无关，请各自提高警惕防止上<BR/>
+							当受骗！群内活跃者并对聊天内容负责的网友可联系群主获得管理权限，共同维护绿色交流环境！</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section id="main_body" name="download">
+			<table>
+				<tr class="td_title">
+					<td colspan="3"><span><strong>免责声明</strong></span></td>
+				</tr>
+				<tr class="td_body">
+					<td colspan="3" class="inner_padding12">
+						V2引擎为网络开源代码修复而来，仅供技术交流使用，请在下载后的24小时内删除！<br/>
+						<!-- V2游戏引擎仅用于《热血传奇》®的衍生游戏《传奇外传》®的PC端游戏开发核心支撑。	<br/> -->
+						任何单位、组织或个人通过V2引擎进行“单机游戏”以外的行为的，应确保已获得《热血传奇》<!-- ® -->相关版权方的许可。<br/>
+						
+						因使用V2游戏引擎引发法律后果的，相关后果及责任由该行为的行为人所自行承担，与程序及程序作者无关。<br/>
+						<p style="color: red; text-align: left;">V2引擎不推荐、不建议也不支持任何未经《热血传奇》<!-- ® -->权利方授权的非个人单机娱乐行为。</p>
+						您使用V2Soft提供的软件成功架设服务端即表示您已悉知并同意不会将V2Soft提供的软件用于侵犯相关权利方的合法权益。<br/>
+						如果您认为软件侵犯了您的合法权益，请联系我们，我们将会在收到通知后尽快移除相关内容以维护您的合法权益。<br/><br/>
+						<label id = "chek"><input type="checkbox" name="category" value="同意" id="category"/>我已知晓、同意并接受上述内容</label>
+					</td>
+				</tr>
+				
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>最新版引擎下载</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>V2外传版引擎</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/13s9Xde2IXkSWhN9ZNKSLaA?pwd=v2m2" target="_blank">点击下载</a></td>
+					<td>外传2.0版引擎</td>
+				</tr>
+				<tr class="td_title controlled">
+					<td colspan="3"><span><strong>测试用服务端</strong></span></td>
+				</tr>
+				<tr class="td_body controlled">
+					<td><span>测试用服务端</span></td>
+					<td class="_4char"><a href="https://pan.baidu.com/s/1whbhTnocwbLXNrbE1TLW5g?pwd=whun" target="_blank">点击下载</a></td>
+					<td>资源源自网络，仅供单机测试使用，请勿用于其他用途！</td>
+				</tr>
+				
+			</table>
+		</section>
+		
+		<footer>
+			<div class="copy">
+				<div class="copycont">
+					<img src="./img/logo2.png" alt="" class="copy_logo" draggable="false">
+					<div class="inlinebox">
+						<div>
+							使用V2引擎时请遵守您所在国家的相关法律法规。我们不推荐，也不建议您将我们的软件用于游戏运营、经营等行为。
+						</div>
+						<div>
+							任何组织或个人因使用V2游戏引擎引发法律后果的，相关后果由其行为人自行承担，与V2游戏引擎及引擎作者无关！
+						</div>
+						<div style="margin-bottom: 4px;">
+							V2引擎无法对用户的行为进行检测，任何用户的行为均不代表V2Soft，且相关行为不受到V2Soft的支持。
+						</div>
+					</div>
+
+				</div>
+				<div class="copyinfo">
+					<p>如果您认为我们侵犯了您的权益，请发送Email至[vivienneowings84@outlook.com]，我们将在收到邮件的72小时内移除相关内容。</p>
+					<p style="margin-top: 8px;">© 2022-2023 V2Soft. All Rights Reserved.</p>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</body>
 </html>
