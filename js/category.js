@@ -13,8 +13,8 @@ function doCategory(){
 			'<h3 style="text-align: center; margin-bottom: 16px;">相关下载</h3>'+
 			'<table class="download-link">'+
 				'<tr>'+
-					'<td><strong>V2引擎 [20240907]</strong><br><label class="small-hint">名称</label></td>'+
-					'<td><strong>515M</strong><br><label class="small-hint">大小</label></td>'+
+					'<td><strong>V2引擎 [20240908]</strong><br><label class="small-hint">名称</label></td>'+
+					'<td><strong>516M</strong><br><label class="small-hint">大小</label></td>'+
 					'<td><strong>永久免费</strong><br><label class="small-hint">无功能限制</label></td>'+
 					'<td><a id="showDownloadLink" href="javascript:null"><button>点击下载</button></a></td>'+
 				'</tr>'+
