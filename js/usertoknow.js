@@ -6,7 +6,7 @@ document.write(
 '	　　<strong style="color: red;">关于近期网络上出现所谓“出售V2引擎源码”的组织、网站以及个人。</strong>'+
 '</p>'+
 '<p>'+
-'	　　<strong style="color: red;">V2Soft及V2M2在此做出正式声明，任何使用所谓“V2M2源码”进行二次开发、商业运营等行为的，与V2Soft、V2M2及V2系列软件作者无关。与此同时，任何买卖相关源码的个人及组织，与V2Soft无关。</strong>' + 
+'	　　<strong style="color: red;">V2Soft及V2M2在此做出正式声明：任何使用所谓“V2M2源码”进行二次开发、商业运营等行为的，与V2Soft、V2M2及V2系列软件作者无关。与此同时，任何买卖相关源码的个人及组织，与V2Soft无关。</strong>' + 
 '</p>'+
 '<p>'+
 '	　　<strong style="color: red;">同时正告各购买了所谓“V2M2源码”的买家：相关源码不受V2Soft支持、不被V2Soft承认、V2Soft不保证其真实性且不为其真实性负责、V2Soft不为其可用性负责、V2Soft不为其出现的问题负责。</strong>' + 
