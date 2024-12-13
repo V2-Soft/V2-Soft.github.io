@@ -16,7 +16,7 @@ document.write(
 '</p>'+
 '<br>'+
 '<p>'+
-'	　　<strong style="color: red;">同时V2Soft要做出辟谣，V2Soft所出品的V2系列软件从未标榜过“史上最强、超越XX引擎、无限仿XX引擎、三端、多端”等名头，任何相关描述均属于虚假宣传及欺骗行为，请各位用户注意甄别。由相关描述所引起的问题，与V2Soft、V2M2及V2系列软件作者无关。</strong>' + 
+'	　　<strong style="color: red;">同时V2Soft要做出辟谣，V2Soft所出品的V2系列软件从未标榜过“史上最强、超越XX引擎、无限仿XX引擎、双端、三端、多端”等名头，任何相关描述均属于虚假宣传及欺骗行为，请各位用户注意甄别。由相关描述所引起的问题，与V2Soft、V2M2及V2系列软件作者无关。</strong>' + 
 '</p>'+
 '</div>' +
 '<div class="need_know">'+
