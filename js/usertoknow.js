@@ -9,7 +9,7 @@ document.write(
 '	　　<strong style="color: red;">V2Soft及V2M2在此做出正式声明，任何使用所谓“V2M2源码”进行二次开发、商业运营等行为的，与V2Soft、V2M2及V2系列软件作者无关。与此同时，任何买卖相关源码的个人及组织，与V2Soft无关。</strong>' + 
 '</p>'+
 '<p>'+
-'	　　<strong style="color: red;">同时正告各购买了所谓“V2M2源码”的买家：相关源码不受V2Soft支持、不被V2Soft承认、V2Soft不保证其真实性、V2Soft不为其真实性负责、V2Soft不为其可用性负责、V2Soft不为其出现的问题负责。</strong>' + 
+'	　　<strong style="color: red;">同时正告各购买了所谓“V2M2源码”的买家：相关源码不受V2Soft支持、不被V2Soft承认、V2Soft不保证其真实性且不为其真实性负责、V2Soft不为其可用性负责、V2Soft不为其出现的问题负责。</strong>' + 
 '</p>'+
 '<p>'+
 '	　　<strong style="color: red;">请各位用户下载软件时认准唯一官网（www.v2m2.top），任何其余渠道V2Soft均不保证软件的安全性、可用性。</strong>' + 
